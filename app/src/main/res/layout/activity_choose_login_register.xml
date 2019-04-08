@@ -30,23 +30,13 @@
         android:text="Login"
         />
     <Button
-        android:id="@+id/register_human"
+        android:id="@+id/register"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/buttonstyle"
         android:textColor="#fff"
-        android:text="Register as a Human"
-        />
-
-    <Button
-        android:id="@+id/register_chew"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/buttonstyle"
-        android:textColor="#fff"
-        android:text="Register as a Chew"
+        android:text="Register"
         />
 </LinearLayout>
 
