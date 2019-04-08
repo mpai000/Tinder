@@ -21,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        dogTinder = MyApplication.getDbAdapter();
+        dogTinder = MyApplication.getDbAdapter().getInstance(getApplicationContext());
 
         mLogin= (Button) findViewById(R.id.login);
         mEmail = (EditText) findViewById(R.id.email);
@@ -31,11 +31,12 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Cursor checkPW = dogTinder.checkPW(mEmail.getText().toString(), mPassword.getText().toString());
-                if(checkPW.getCount() <= 0){
+                if(checkPW.getCount() == 0){
                     Toast.makeText(LoginActivity.this,"Invalid email or password!",Toast.LENGTH_LONG).show();
                 }else{
                     Toast.makeText(LoginActivity.this,"Login successful!",Toast.LENGTH_LONG).show();
 
+                    checkPW.moveToNext();
                     int sessionID = checkPW.getInt(1);
 
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);

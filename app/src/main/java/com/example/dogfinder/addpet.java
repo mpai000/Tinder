@@ -30,7 +30,7 @@ public class addpet extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addpet);
 
-        dogTinder = MyApplication.getDbAdapter();
+        dogTinder = MyApplication.getDbAdapter().getInstance(getApplicationContext());
 
         Spinner spinnerLocation = findViewById(R.id.spinnerLocation);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.Location,android.R.layout.simple_spinner_item);

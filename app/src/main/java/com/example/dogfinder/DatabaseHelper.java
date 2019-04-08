@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
+    private static DatabaseHelper sInstance = null;
+
     public static final String DATABASE_NAME = "dogtinderDB.db";
     public static final String TABLE_NAME = "dog_table";
     public static final String COL1 = "dogID";
@@ -35,7 +37,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String SWIPE_COL2 = "dogID";
     public static final String SWIPE_COL3 = "direction";
 
-    public DatabaseHelper(Context context) {
+
+    public static synchronized DatabaseHelper getInstance(Context context) {
+
+        // Use the application context, which will ensure that you
+        // don't accidentally leak an Activity's context.
+        // See this article for more information: http://bit.ly/6LRzfx
+        if (sInstance == null) {
+            sInstance = new DatabaseHelper(context.getApplicationContext());
+        }
+        return sInstance;
+    }
+
+
+    private DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
 
@@ -46,10 +61,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String CREATE_DOG_TABLE = "CREATE TABLE dog_table(dogID INTEGER PRIMARY KEY AUTOINCREMENT,dogLocation TEXT, dogBreed TEXT, dogMaturity TEXT, dogGender TEXT, dogSize TEXT, dogName TEXT, dogPictureLink TEXT)";
         db.execSQL(CREATE_DOG_TABLE);
 
-        String CREATE_USER_TABLE = "CREATE TABLE user_table(userID INTEGER PRIMARY KEY AUTOINCREMENT,email TEXT, password TEXT, firstName TEXT, lastName TEXT, age INTEGER, userPictureLink TEXT)";
+        String CREATE_USER_TABLE = "CREATE TABLE user_table(userID INTEGER PRIMARY KEY AUTOINCREMENT,email TEXT, password TEXT, userLocation TEXT, firstName TEXT, lastName TEXT, age INTEGER, userPictureLink TEXT)";
         db.execSQL(CREATE_USER_TABLE);
 
-        String CREATE_SWIPE_TABLE = "CREATE TABLE swipe_table(userID INTEGER PRIMARY KEY,dogID INTEGER PRIMARY KEY, direction TEXT, FOREIGN KEY(userID) REFERENCES user_table(userID), FOREIGN KEY(dogID) REFERENCES buddiesList(dog_table))";
+        String CREATE_SWIPE_TABLE = "CREATE TABLE swipe_table(userID INTEGER,dogID INTEGER, direction TEXT, FOREIGN KEY(userID) REFERENCES user_table(userID), FOREIGN KEY(dogID) REFERENCES dog_table(dogID), PRIMARY KEY(userID, dogID))";
         db.execSQL(CREATE_SWIPE_TABLE);
     }
 
@@ -59,6 +74,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS user_table");
         db.execSQL("DROP TABLE IF EXISTS swipe_table");
         onCreate(db);
+    }
+
+    @Override
+    public void finalize() throws Throwable {
+        //terminate something else here if you want
+        this.close();
+        super.finalize();
     }
 
     public boolean addDogData(String dogLocation, String dogBreed, String dogMaturity, String dogGender, String dogSize, String dogName, String  dogPictureLink) {
@@ -103,11 +125,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public boolean swipe(int userID, int dogID, String direction) {
         SQLiteDatabase db = this.getReadableDatabase();
+        String[] search_cols = new String[]{String.valueOf(userID), String.valueOf(dogID)};
+        Cursor c = db.rawQuery("SELECT * FROM " + SWIPE_TABLE_NAME + " WHERE " + SWIPE_COL1 + "= ? AND " + SWIPE_COL2 + "= ? ", search_cols);
+
         ContentValues contentValues = new ContentValues();
-        contentValues.put(SWIPE_COL1,userID);
-        contentValues.put(SWIPE_COL2,dogID);
+
         contentValues.put(SWIPE_COL3,direction);
 
+        if (c.moveToFirst()) {
+            //Record exist
+            db.update(SWIPE_TABLE_NAME, contentValues, SWIPE_COL1 + "= ? AND " + SWIPE_COL2 + "= ?", search_cols);
+            c.close();
+
+            return true;
+        }
+        //Record available
+        contentValues.put(SWIPE_COL1,userID);
+        contentValues.put(SWIPE_COL2,dogID);
         long result = db.insertOrThrow(SWIPE_TABLE_NAME, null, contentValues);
         db.close();
         if (result == -1){

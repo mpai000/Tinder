@@ -78,6 +78,8 @@ public class findpet extends AppCompatActivity {
                 intent.putExtra("dogSize", dogSize);
 
                 startActivity(intent);
+                finish();
+                return;
             }
         });
 

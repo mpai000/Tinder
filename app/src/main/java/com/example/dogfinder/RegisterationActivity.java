@@ -26,7 +26,7 @@ public class RegisterationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registeration);
 
-        dogTinder = MyApplication.getDbAdapter();
+        dogTinder = MyApplication.getDbAdapter().getInstance(getApplicationContext());
 
         mRegister= (Button) findViewById(R.id.register);
         mEmail= (EditText) findViewById(R.id.email);
@@ -47,10 +47,10 @@ public class RegisterationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Cursor checkExist = dogTinder.checkExist(mEmail.getText().toString());
 
-                if(checkExist.getCount() > 0){
-                    String dogLocation = mLocation.getSelectedItem().toString();
+                if(checkExist.getCount() == 0){
+                    String userLocation = mLocation.getSelectedItem().toString();
 
-                    boolean insertData = dogTinder.addUserData(mEmail.getText().toString(), mPassword.getText().toString(), dogLocation, mFirstName.getText().toString(), mLastName.getText().toString());
+                    boolean insertData = dogTinder.addUserData(mEmail.getText().toString(), mPassword.getText().toString(), userLocation, mFirstName.getText().toString(), mLastName.getText().toString());
 
                     if(insertData == true){
                         Toast.makeText(RegisterationActivity.this,"Data succesfully inserted!",Toast.LENGTH_LONG).show();
@@ -63,7 +63,8 @@ public class RegisterationActivity extends AppCompatActivity {
                         Toast.makeText(RegisterationActivity.this,"Something went wrong",Toast.LENGTH_LONG).show();
 
                     }
-                }
+                    Toast.makeText(RegisterationActivity.this,"Something went wrong",Toast.LENGTH_LONG).show();
+               }
             }
         });
     }

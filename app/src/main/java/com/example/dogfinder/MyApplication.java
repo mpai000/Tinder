@@ -12,6 +12,12 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        dbAdapter = new DatabaseHelper(getApplicationContext());
+        dbAdapter.getInstance(this);
+    }
+
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+        //terminate something else here if you want
     }
 }

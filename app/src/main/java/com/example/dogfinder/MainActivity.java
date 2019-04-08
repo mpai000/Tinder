@@ -9,6 +9,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    int sessionID;
+
     Button findpet, addpet, history;
 
     DatabaseHelper dogTinder;
@@ -18,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        dogTinder = MyApplication.getDbAdapter();
+        sessionID = getIntent().getExtras().getInt("sessionID");
+
+        dogTinder = MyApplication.getDbAdapter().getInstance(getApplicationContext());
 
         findpet = (Button) findViewById(R.id.findpet);
         findpet.setOnClickListener(new View.OnClickListener() {
@@ -41,7 +45,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, History.class);
+                intent.putExtra("sessionID", sessionID);
                 startActivity(intent);
+                finish();
+                return;
             }
         });
     }
@@ -49,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void openfindpetactivity(){
-        int sessionID = getIntent().getExtras().getInt("sessionID");
         Intent intent = new Intent(this, findpet.class);
         intent.putExtra("sessionID", sessionID);
         startActivity(intent);
@@ -58,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openaddpetactivity(){
-        int sessionID = getIntent().getExtras().getInt("sessionID");
         Intent intent = new Intent(this, addpet.class);
         intent.putExtra("sessionID", sessionID);
         startActivity(intent);

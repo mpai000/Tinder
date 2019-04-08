@@ -33,13 +33,15 @@ import android.content.Context;
 
 public class SwipeScreen extends AppCompatActivity {
 
-    int sessionID = getIntent().getExtras().getInt("sessionID");
+    int sessionID;
 
     private ArrayList<DogData> dogs;
   //  private ArrayAdapter<DogData> arrayAdapter;
 
     public static MyAppAdapter myAppAdapter;
     public static ViewHolder viewHolder;
+
+    DogData toBeRemoved;
 
     private int i;
 
@@ -52,7 +54,8 @@ public class SwipeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_swipe);
 
-        dogTinder = MyApplication.getDbAdapter();
+        sessionID = getIntent().getExtras().getInt("sessionID");
+        dogTinder = MyApplication.getDbAdapter().getInstance(getApplicationContext());
 
         back = (Button) findViewById(R.id.btnBack);
         back.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +78,7 @@ public class SwipeScreen extends AppCompatActivity {
             public void removeFirstObjectInAdapter() {
                 // this is the simplest way to delete an object from the Adapter (/AdapterView)
                 Log.d("LIST", "removed object!");
+                toBeRemoved = dogs.get(0);
                 dogs.remove(0);
                 //arrayAdapter.notifyDataSetChanged();
                 myAppAdapter.notifyDataSetChanged();
@@ -82,32 +86,25 @@ public class SwipeScreen extends AppCompatActivity {
 
             @Override
             public void onLeftCardExit(Object dataObject) {
-                //Do something on the left!
-                //You also have access to the original object.
-                //If you want to use it just cast it (String) dataObject
+                String id = toBeRemoved.getDogID();
 
-
-                Object selected = (DogData)dataObject;
-                int id = Integer.parseInt(((DogData) selected).getDogID());
-
-                boolean insertData = dogTinder.swipe(sessionID,id,"left");
+                boolean insertData = dogTinder.swipe(sessionID,Integer.parseInt(id),"left");
                 if(insertData == true){
-                    Toast.makeText(SwipeScreen.this, "left", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SwipeScreen.this, id +" left", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(SwipeScreen.this,"Something went wrong",Toast.LENGTH_LONG).show();
+                    Toast.makeText(SwipeScreen.this,"Something went wrong!",Toast.LENGTH_LONG).show();
                 }
             }
 
             @Override
             public void onRightCardExit(Object dataObject) {
-                Object selected = (DogData)dataObject;
-                int id = Integer.parseInt(((DogData) selected).getDogID());
+                String id = toBeRemoved.getDogID();
 
-                boolean insertData = dogTinder.swipe(sessionID,id,"right");
+                boolean insertData = dogTinder.swipe(sessionID,Integer.parseInt(id),"right");
                 if(insertData == true){
-                    Toast.makeText(SwipeScreen.this, "right", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SwipeScreen.this, id +" right", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(SwipeScreen.this,"Something went wrong",Toast.LENGTH_LONG).show();
+                    Toast.makeText(SwipeScreen.this,"Something went wrong!",Toast.LENGTH_LONG).show();
                 }
             }
 
@@ -119,8 +116,6 @@ public class SwipeScreen extends AppCompatActivity {
                 myAppAdapter.notifyDataSetChanged();
                 Log.d("LIST", "notified");
                 i++;
-
-                goBack();
             }
 
             @Override

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class History extends AppCompatActivity {
 
-    int sessionID = getIntent().getExtras().getInt("sessionID");
+    int sessionID;
 
     public static final String TAG = "MainActivity";
 
@@ -27,12 +27,14 @@ public class History extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
-        dogTinder = MyApplication.getDbAdapter();
+        dogTinder = MyApplication.getDbAdapter().getInstance(getApplicationContext());
+        sessionID = getIntent().getExtras().getInt("sessionID");
 
         Cursor swipeData = dogTinder.getSwipe(sessionID,"right");
 
         while (swipeData.moveToNext()){
             Cursor dogData = dogTinder.getDogInfo(swipeData.getInt(1));
+            dogData.moveToNext();
             mNames.add(dogData.getString(6));
             mImageUrls.add(dogData.getString(7));
         }
