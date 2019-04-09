@@ -6,59 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/addpet"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:layout_marginStart="162dp"
-        android:layout_marginLeft="162dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginRight="162dp"
-        android:layout_marginBottom="8dp"
-        android:text="Add Pet for Adoption"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
-
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:paddingRight="20dp"
+        >
     <Button
         android:id="@+id/findpet"
-        android:layout_width="wrap_content"
-        android:layout_height="41dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginRight="114dp"
-        android:layout_marginBottom="332dp"
-        android:text="Find Pet for Adoption"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.531" />
-
-    <Button
-        android:id="@+id/history"
-        android:layout_width="187dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginRight="114dp"
-        android:layout_marginBottom="8dp"
-        android:text="View History"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Find Your Chews"
+        android:textSize="20dp"
+        android:textColor="#fff" />
+        <Button
+            android:id="@+id/addpet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Add A Chew"
+            android:textSize="20dp"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonstyle"
+            android:text="View History"
+            android:textSize="20dp"
+            android:textColor="#fff" />
+
+
 
     <ImageView
         android:id="@+id/imageView3"
@@ -66,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="69dp"
         android:layout_marginLeft="69dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="69dp"
         android:layout_marginRight="69dp"
         android:layout_marginBottom="81dp"
@@ -77,5 +66,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.805"
         app:srcCompat="@drawable/puppies" />
-
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

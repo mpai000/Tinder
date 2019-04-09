@@ -10,6 +10,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static DatabaseHelper sInstance = null;
 
+    private static final int DATABASE_VERSION = 2;
+
     public static final String DATABASE_NAME = "dogtinderDB.db";
     public static final String TABLE_NAME = "dog_table";
     public static final String COL1 = "dogID";
@@ -51,7 +53,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     private DatabaseHelper(Context context) {
-        super(context, DATABASE_NAME, null, 1);
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
 

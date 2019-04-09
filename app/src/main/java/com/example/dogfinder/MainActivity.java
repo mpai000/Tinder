@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         findpet = (Button) findViewById(R.id.findpet);
         findpet.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 openfindpetactivity();
             }
         });

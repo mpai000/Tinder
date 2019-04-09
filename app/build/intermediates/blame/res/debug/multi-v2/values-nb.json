@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Sena\\Documents\\GitHub\\Tinder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nb\\values-nb.xml",
+            "outputFile": "/Users/meghnapai/Desktop/Tinder/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sena\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\323f8a1fbc5e4a0571fede3efdf63678\\res\\values-nb\\values-nb.xml",
+                    "source": "/Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fd99e11cd01173fee4f1455ac2a7b6ae/res/values-nb/values-nb.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sena\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\492a82d09ffc23930b93bd9d7e7bb9f2\\res\\values-nb\\values-nb.xml",
+                    "source": "/Users/meghnapai/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bb102245aa1d29477eafc4862e6b9797/res/values-nb/values-nb.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

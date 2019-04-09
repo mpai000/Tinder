@@ -10,55 +10,72 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="536dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
         android:orientation="vertical"
         android:paddingLeft="20dp"
         android:paddingTop="20dp"
         android:paddingRight="20dp"
-        tools:layout_editor_absoluteY="31dp">
+        >
 
         <EditText
             android:id="@+id/firstName"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="First name"
             android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textSize="20dp" />
 
         <EditText
             android:id="@+id/lastname"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Last name"
             android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textSize="20dp" />
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Email"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="10dp"
             android:inputType="textEmailAddress"
             android:textColor="@color/black"
             android:textSize="20dp" />
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Password"
             android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
             android:textColor="@color/black"
             android:textSize="20dp" />
 
         <TextView
             android:id="@+id/tvLocation"
-            android:layout_width="89dp"
-            android:layout_height="37dp"
+            android:layout_width="350dp"
+            android:paddingLeft="5dp"
+            android:layout_height="35dp"
+            android:drawableLeft="@drawable/ic_add_location_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
             android:text="Location"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,20 +83,20 @@
 
         <Spinner
             android:id="@+id/spinnerLocation"
-            android:layout_width="369dp"
-            android:layout_height="24dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.867"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            />
 
         <Button
             android:id="@+id/register"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:background="@drawable/buttonstyle"
-            android:text="Register"
+            android:text="Find Your Chews"
+            android:textSize="20dp"
             android:textColor="#fff" />
 
     </LinearLayout>

@@ -55,7 +55,6 @@ public class RegisterationActivity extends AppCompatActivity {
                     if(insertData == true){
                         Toast.makeText(RegisterationActivity.this,"Data succesfully inserted!",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(RegisterationActivity.this, LoginActivity.class);
-
                         startActivity(intent);
                         finish();
                         return;
@@ -63,7 +62,6 @@ public class RegisterationActivity extends AppCompatActivity {
                         Toast.makeText(RegisterationActivity.this,"Something went wrong",Toast.LENGTH_LONG).show();
 
                     }
-                    Toast.makeText(RegisterationActivity.this,"Something went wrong",Toast.LENGTH_LONG).show();
                }
             }
         });

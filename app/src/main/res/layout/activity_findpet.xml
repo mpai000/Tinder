@@ -6,187 +6,154 @@
     android:layout_height="match_parent"
     tools:context=".findpet">
 
-    <Spinner
-        android:id="@+id/spinnerSize"
-        android:layout_width="229dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerGender" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Your Chew"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            />
 
 
-    <TextView
-        android:id="@+id/tvSize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginTop="292dp"
-        android:layout_marginEnd="317dp"
-        android:layout_marginRight="317dp"
-        android:text="Size"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="350dp"
+            android:paddingLeft="5dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Gender"
+            android:drawableLeft="@drawable/ic_wc_black_24dp"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+             />
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            />
 
-    <TextView
-        android:id="@+id/tvGender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="317dp"
-        android:layout_marginRight="317dp"
-        android:layout_marginBottom="65dp"
-        android:text="Gender"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+        <TextView
+            android:id="@+id/tvBreed"
+            android:layout_width="350dp"
+            android:paddingLeft="5dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Breed"
+            android:drawableLeft="@drawable/ic_group_black_24dp"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
+        <Spinner
+            android:id="@+id/spinnerBreed"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+           android:layout_gravity="center" />
 
-    <TextView
-        android:id="@+id/tvMaturity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="317dp"
-        android:layout_marginRight="317dp"
-        android:text="Maturity"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+        <TextView
+            android:id="@+id/tvSize"
+            android:layout_width="350dp"
+            android:paddingLeft="5dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Size"
+            android:drawableLeft="@drawable/ic_text_fields_black_24dp"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
 
-    <TextView
-        android:id="@+id/tvBreed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="317dp"
-        android:layout_marginRight="317dp"
-        android:text="Breed"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+        <Spinner
+            android:id="@+id/spinnerSize"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+           />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pick A Chew"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056" />
+        <TextView
+            android:id="@+id/tvMaturity"
+            android:layout_width="350dp"
+            android:paddingLeft="5dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Maturity"
+            android:drawableLeft="@drawable/ic_android_black_24dp"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
 
-    <TextView
-        android:id="@+id/tvLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginTop="59dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginBottom="40dp"
-        android:text="Location"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvBreed"
-        app:layout_constraintEnd_toStartOf="@+id/spinnerLocation"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <Spinner
+            android:id="@+id/spinnerMaturity"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="" />
 
-    <Spinner
-        android:id="@+id/spinnerMaturity"
-        android:layout_width="229dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="350dp"
+            android:paddingLeft="5dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_add_location_black_24dp"
+            android:drawablePadding="10dp"
+            android:text="Location"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
 
-    <Spinner
-        android:id="@+id/spinnerLocation"
-        android:layout_width="229dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <Spinner
+            android:id="@+id/spinnerLocation"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+           />
 
-    <Spinner
-        android:id="@+id/spinnerBreed"
-        android:layout_width="229dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <Button
+            android:id="@+id/btnViewData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Find Your Chews"
+            android:textSize="20dp"
+            android:textColor="#fff" />
 
-    <Spinner
-        android:id="@+id/spinnerGender"
-        android:layout_width="229dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="288dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/btnViewData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="163dp"
-        android:layout_marginRight="163dp"
-        android:layout_marginBottom="57dp"
-        android:text="Find Chews"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSize"
-        app:layout_constraintVertical_bias="0.0" />
+
 
 </android.support.constraint.ConstraintLayout>

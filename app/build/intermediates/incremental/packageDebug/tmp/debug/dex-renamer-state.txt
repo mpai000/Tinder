@@ -1,4 +1,4 @@
-#Mon Apr 08 15:11:58 EDT 2019
-base.0=C\:\\Users\\Sena\\Documents\\GitHub\\Tinder\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+#Tue Apr 09 12:36:29 EDT 2019
+base.0=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex
