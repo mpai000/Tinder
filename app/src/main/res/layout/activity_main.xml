@@ -4,7 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -14,7 +20,9 @@
         android:paddingLeft="20dp"
         android:paddingTop="40dp"
         android:paddingRight="20dp"
-        >
+        tools:ignore="MissingConstraints">
+
+
     <Button
         android:id="@+id/findpet"
         android:layout_width="fill_parent"

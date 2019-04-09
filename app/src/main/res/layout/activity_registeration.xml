@@ -7,6 +7,11 @@
     tools:context=".RegisterationActivity"
     android:orientation="vertical">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="536dp"

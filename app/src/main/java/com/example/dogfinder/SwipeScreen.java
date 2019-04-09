@@ -7,6 +7,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -40,30 +41,44 @@ public class SwipeScreen extends AppCompatActivity {
 
     public static MyAppAdapter myAppAdapter;
     public static ViewHolder viewHolder;
-
-    DogData toBeRemoved;
-
     private int i;
 
+    DogData toBeRemoved;
     DatabaseHelper dogTinder;
 
-    Button back;
+    Toolbar mtoolbar;
+    TextView toolbarTitle;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_swipe);
 
+
+        mtoolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mtoolbar);
+        getSupportActionBar().setTitle(null);
+        mtoolbar.setNavigationIcon(R.drawable.ic_keyboard_backspace_black_24dp);
+
+
+        toolbarTitle=(TextView) findViewById(R.id.title);
+        toolbarTitle.setText("");
+        mtoolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int sessionID = getIntent().getExtras().getInt("sessionID");
+                Intent intent = new Intent(SwipeScreen.this, MainActivity.class);
+                intent.putExtra("sessionID", sessionID);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         sessionID = getIntent().getExtras().getInt("sessionID");
         dogTinder = MyApplication.getDbAdapter().getInstance(getApplicationContext());
 
-        back = (Button) findViewById(R.id.btnBack);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                goBack();
-            }
-        });
+
 
         dogs = new ArrayList<>();
         searchData();

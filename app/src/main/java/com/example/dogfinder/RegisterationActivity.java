@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegisterationActivity extends AppCompatActivity {
@@ -18,6 +20,8 @@ public class RegisterationActivity extends AppCompatActivity {
     private EditText mFirstName, mLastName, mEmail, mPassword;
     private Spinner mLocation;
 
+    Toolbar mtoolbar;
+    TextView toolbarTitle;
     // In any activity just pass the context and use the singleton method
     DatabaseHelper dogTinder;
 
@@ -34,6 +38,23 @@ public class RegisterationActivity extends AppCompatActivity {
         mLastName = (EditText) findViewById(R.id.lastname);
         mPassword = (EditText) findViewById(R.id.password);
         mLocation = (Spinner) findViewById(R.id.spinnerLocation);
+
+
+        mtoolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mtoolbar);
+        getSupportActionBar().setTitle(null);
+        mtoolbar.setNavigationIcon(R.drawable.ic_keyboard_backspace_black_24dp);
+        toolbarTitle=(TextView) findViewById(R.id.title);
+        toolbarTitle.setText("");
+        mtoolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RegisterationActivity.this, ChooseLoginRegisterActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
         Spinner spinnerLocation = findViewById(R.id.spinnerLocation);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.Location,android.R.layout.simple_spinner_item);
@@ -54,7 +75,7 @@ public class RegisterationActivity extends AppCompatActivity {
 
                     if(insertData == true){
                         Toast.makeText(RegisterationActivity.this,"Data succesfully inserted!",Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(RegisterationActivity.this, LoginActivity.class);
+                        Intent intent = new Intent(RegisterationActivity.this, ChooseLoginRegisterActivity.class);
                         startActivity(intent);
                         finish();
                         return;

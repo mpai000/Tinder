@@ -6,10 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".addpet">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:layout_gravity="center"
         android:orientation="vertical"
         android:paddingLeft="20dp"
@@ -17,16 +22,16 @@
         android:paddingTop="20dp"
         tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add A Chew For Adoption"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        />
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Add A Chew For Adoption"-->
+        <!--android:textSize="30sp"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--/>-->
 
     <EditText
         android:id="@+id/nameentry"

@@ -40,7 +40,6 @@ public class ChooseLoginRegisterActivity extends AppCompatActivity  {
 
                     Intent intent = new Intent(ChooseLoginRegisterActivity.this, MainActivity.class);
                     intent.putExtra("sessionID", sessionID);
-
                     startActivity(intent);
                     finish();
                     return;

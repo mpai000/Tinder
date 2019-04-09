@@ -1,7 +1,11 @@
 #Internal package file, do not edit.
-#Mon Apr 08 23:56:06 EDT 2019
+#Tue Apr 09 16:41:22 EDT 2019
+1.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
 0.baseType=DIRECTORY
-0.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/dex/debug/mergeDexDebug/out
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
 0.path=classes.dex
 0.set=DEX
-count=1
+0.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/dex/debug/mergeExtDexDebug/out
+1.path=classes.dex

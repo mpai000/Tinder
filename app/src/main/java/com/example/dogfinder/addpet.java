@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -18,17 +19,35 @@ import org.w3c.dom.Text;
 public class addpet extends AppCompatActivity {
 
     Spinner location, breed, maturity, gender, size;
-
     Button btnaddData;
-
     TextView dogName, dogpicturelink;
-
     DatabaseHelper dogTinder;
+    Toolbar mtoolbar;
+    TextView toolbarTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addpet);
+
+        mtoolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mtoolbar);
+        getSupportActionBar().setTitle(null);
+        mtoolbar.setNavigationIcon(R.drawable.ic_keyboard_backspace_black_24dp);
+        toolbarTitle=(TextView) findViewById(R.id.title);
+        toolbarTitle.setText("Add A Chew For Adoption");
+        mtoolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int sessionID = getIntent().getExtras().getInt("sessionID");
+                Intent intent = new Intent(addpet.this, MainActivity.class);
+                intent.putExtra("sessionID", sessionID);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
 
         dogTinder = MyApplication.getDbAdapter().getInstance(getApplicationContext());
 

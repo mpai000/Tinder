@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">DogTinder</string>
+    <string name="menu_setting">setting</string>
+    <string name="menu_back">menu_back</string>
 
     <string-array name="Location">
         <item> Bronx </item>

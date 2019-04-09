@@ -624,6 +624,7 @@ color cardview_shadow_start_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color darkBlue
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -1026,6 +1027,7 @@ drawable ic_android_black_24dp
 drawable ic_email_black_24dp
 drawable ic_group_black_24dp
 drawable ic_insert_link_black_24dp
+drawable ic_keyboard_backspace_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_lock_black_24dp
@@ -1035,6 +1037,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_person_black_24dp
 drawable ic_pets_black_24dp
 drawable ic_phone_black_24dp
+drawable ic_settings_black_24dp
 drawable ic_text_fields_black_24dp
 drawable ic_wc_black_24dp
 drawable mtrl_snackbar_background
@@ -1082,6 +1085,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_setting
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1097,7 +1101,6 @@ id beginning
 id blocking
 id bottom
 id btnAddData
-id btnBack
 id btnViewData
 id buttonPanel
 id cardImage
@@ -1272,6 +1275,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1378,6 +1382,8 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout toolbar
+menu my_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description
@@ -1427,6 +1433,8 @@ string character_counter_pattern
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
+string menu_back
+string menu_setting
 string mtrl_chip_close_icon_content_description
 string password_toggle_content_description
 string path_password_eye
