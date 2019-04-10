@@ -10,6 +10,12 @@
         android:id="@+id/image"
         android:src="@mipmap/ic_launcher"/>
 
+    <gradient
+        android:startColor="#000000"
+        android:centerColor="#5b5b5b"
+        android:endColor="#000000"
+        android:angle="0" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

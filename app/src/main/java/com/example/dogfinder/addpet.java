@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -16,6 +17,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
+
+import java.net.URL;
+import java.net.URLConnection;
 
 public class addpet extends AppCompatActivity {
 
@@ -101,9 +105,17 @@ public class addpet extends AppCompatActivity {
                 String dogMaturity = maturity.getSelectedItem().toString();
                 String dogGender = gender.getSelectedItem().toString();
                 String dogSize = size.getSelectedItem().toString();
-
                 String DogName = dogName.getText().toString();
-                boolean insertData = dogTinder.addDogData(dogLocation, dogBreed, dogMaturity, dogGender, dogSize, (dogName.getText().toString()), dogpicturelink.getText().toString());
+                String dogPic = dogpicturelink.getText().toString();
+
+                //check link
+                if(!Patterns.WEB_URL.matcher(dogPic).matches()){
+                    //default dog pic
+                    dogPic = "https://i.imgur.com/ycZpu2c.png";
+                }
+
+
+                boolean insertData = dogTinder.addDogData(dogLocation,dogBreed,dogMaturity,dogGender,dogSize, (dogName.getText().toString()), dogPic);
                 if (insertData == true) {
                     Toast.makeText(addpet.this, "Data succesfully inserted!", Toast.LENGTH_LONG).show();
                 } else {
@@ -129,5 +141,8 @@ public class addpet extends AppCompatActivity {
         });
     }
 
-
+    @Override
+    public void onBackPressed() {
+        //do nothing to disable
+    }
 }

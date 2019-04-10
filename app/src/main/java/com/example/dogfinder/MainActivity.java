@@ -137,4 +137,9 @@ public class MainActivity extends AppCompatActivity {
 //
 //        return super.onCreateOptionsMenu(menu);
 //    }
+
+    @Override
+    public void onBackPressed() {
+        //do nothing to disable
+    }
 }
