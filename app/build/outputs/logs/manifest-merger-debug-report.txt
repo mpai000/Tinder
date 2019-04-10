@@ -1,234 +1,238 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:2:1-34:12
-MERGED from [com.android.support:design:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a9bbbd33569c34c3e579907646b7ac55/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bb102245aa1d29477eafc4862e6b9797/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/61f997d55d230f195b22d883d754d11c/AndroidManifest.xml:2:1-11:12
-MERGED from [com.lorentzos.swipecards:library:1.0.9] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/library-1.0.9.aar/63cab5f20cd0b1d3024e13d8ebd64253/AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/38230df2c3b0cb18223c2054b9eb6643/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/e04456b82bbbe356c92392130b4506cd/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/cd84851596437d52872127e11192ca78/AndroidManifest.xml:2:1-12:12
-MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/9af66c164767e943d9286512ea0a3a5f/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d0bf413ed234c0d20cda4be17a4e2677/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bde4822fec6b6e51fcb479de90340ff0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8f12250ba1342f8b130edb4b48d0625b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/dcb94d780548b0e9dcc8b4b09482eada/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/da4c44bbeba2ceb20d54b07fc93717aa/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/3101cc0d249a80999b9a3bfa0a8d0d47/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/3f510f241266a9aa0890d4de83ab693c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/7c2b93d44a5e3bcb68f1846dafe5677f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/ba7ce35ab0b82e2be96467fd8c26ab6a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/f567002583072f09a88b88272bfcdc2d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/68ee520e2f00eef022aaf5b33d781cbd/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/ccfec2b6bc3edf6d89e0f4d2bfdffd79/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/3efe0c35bc14829f6ce55e8bc166a1c3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/4ccbabe5fe7f7672e43a4dca6e6c4c72/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fd99e11cd01173fee4f1455ac2a7b6ae/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/665884ae323179b92a6045da3ac66dbc/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4b143d4f53c447efe2c02bb68dc00255/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/1f88cce9d12f81d238a8db3684ff4466/AndroidManifest.xml:2:1-11:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ca513c991447a880d2230f4eb7c1c802/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/f4555ce94c8a4aa14630f9a851aefa10/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/00f3b429f916b51394a52cc538724936/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/d9cecb32bfef5944ef2a037243b7da11/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7eb1ab895aa0f6e821c6863af00b671b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/c96598156749a5f3a3cc6f321b2a6bee/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/1b6c9a4c7f1867d93008970d80e79040/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/3b7f98bd19ee7f7ee61876b5172b1783/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d7a28c344559540b3dac1f814e1e569c/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:2:1-34:12
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:2:1-35:12
+MERGED from [com.android.support:design:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/323702e4890a3f739c18efa4aadaacb5/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/52569c765afa219f730e96174977e589/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/45e7d62901f9a62d706e151057e57ba1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.lorentzos.swipecards:library:1.0.9] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/library-1.0.9.aar/f9625c1b35ccfc9688abc6c5bc69d1e2/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/4d46f4e9c53da337dc9706c13245d499/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/0e4108ce6c97a930bc74aa8e4c5b8c25/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/7403cc02e7706e5a812de0fb846a2969/AndroidManifest.xml:2:1-12:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/270109bde1f69397ed2ce88a6673e9d4/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/36c64a8bda04de58e7e19a15bcac69e7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7064020f745c83839e922abaed3b89b3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/021543ede1a0285cd2b28b8f75000879/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b56731ba86065006cee5873adeb43b35/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1146aaeb2a340c5ee4fd3ff310ef0c7f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/4d25a670c1bb96db2b57a0e89a5142be/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/e5264b904633d8c2fce45621306ff7ee/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/e753b4eaa982db271d3f15c6fe6f94cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/6cb8d59ed32a999f0187c120087618fe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/914b02af867ba7d7b16195d7ae1311ba/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c40710fca8d4aae1b2f6e76cc74ae7d3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/6b622532279306c71931e67fa07715ec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6537c3fd590448229e1e6316a7f91bc1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c8728e5de4121108b69ec8c268e7de69/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/be769dfb17ec26fb3b4410e074fd5125/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7d9e99b9f75e24f3e66418bd12f95424/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/98d6237e897024a7e7042a52fc1a2de8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/a079b87d8d5cb29cdf79becd970a6eb9/AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cd0b1e7dee0100d332ef23568ccdd9f4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/89e0124319f3b85b41744c30bfef9e6e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/7264f462e6566ebd6b741e8ecf6f38f3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/110e3ebacd0e68e50ee5caa635808f1b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/e004e32a41c6bf949f9761a883103bb8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/dd02670410a34ac0f4286cc4978df71d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/28dac1097d06cc947655a415c1a7f7af/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/df9943ecd80b922d7380bb76948e328e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/9b3c931b9029a715c921a74dd4eb8024/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:2:1-35:12
 	package
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:3:5-36
-		INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:2:1-34:12
-		INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:2:1-35:12
+		INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:2:1-34:12
-		INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:2:1-35:12
+		INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:7:5-81
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:7:22-78
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:7:22-78
 application
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:9:5-32:19
-MERGED from [com.android.support:design:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a9bbbd33569c34c3e579907646b7ac55/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a9bbbd33569c34c3e579907646b7ac55/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/61f997d55d230f195b22d883d754d11c/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/61f997d55d230f195b22d883d754d11c/AndroidManifest.xml:9:5-20
-MERGED from [com.lorentzos.swipecards:library:1.0.9] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/library-1.0.9.aar/63cab5f20cd0b1d3024e13d8ebd64253/AndroidManifest.xml:12:5-20
-MERGED from [com.lorentzos.swipecards:library:1.0.9] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/library-1.0.9.aar/63cab5f20cd0b1d3024e13d8ebd64253/AndroidManifest.xml:12:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/cd84851596437d52872127e11192ca78/AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/cd84851596437d52872127e11192ca78/AndroidManifest.xml:10:5-20
-MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/9af66c164767e943d9286512ea0a3a5f/AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/9af66c164767e943d9286512ea0a3a5f/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-compat:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fd99e11cd01173fee4f1455ac2a7b6ae/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fd99e11cd01173fee4f1455ac2a7b6ae/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/665884ae323179b92a6045da3ac66dbc/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/665884ae323179b92a6045da3ac66dbc/AndroidManifest.xml:22:5-23:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/1f88cce9d12f81d238a8db3684ff4466/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/1f88cce9d12f81d238a8db3684ff4466/AndroidManifest.xml:9:5-20
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:9:5-33:19
+MERGED from [com.android.support:design:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/323702e4890a3f739c18efa4aadaacb5/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/323702e4890a3f739c18efa4aadaacb5/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/45e7d62901f9a62d706e151057e57ba1/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/45e7d62901f9a62d706e151057e57ba1/AndroidManifest.xml:9:5-20
+MERGED from [com.lorentzos.swipecards:library:1.0.9] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/library-1.0.9.aar/f9625c1b35ccfc9688abc6c5bc69d1e2/AndroidManifest.xml:12:5-20
+MERGED from [com.lorentzos.swipecards:library:1.0.9] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/library-1.0.9.aar/f9625c1b35ccfc9688abc6c5bc69d1e2/AndroidManifest.xml:12:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/7403cc02e7706e5a812de0fb846a2969/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/7403cc02e7706e5a812de0fb846a2969/AndroidManifest.xml:10:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/270109bde1f69397ed2ce88a6673e9d4/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/270109bde1f69397ed2ce88a6673e9d4/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/be769dfb17ec26fb3b4410e074fd5125/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/be769dfb17ec26fb3b4410e074fd5125/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7d9e99b9f75e24f3e66418bd12f95424/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7d9e99b9f75e24f3e66418bd12f95424/AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/a079b87d8d5cb29cdf79becd970a6eb9/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/a079b87d8d5cb29cdf79becd970a6eb9/AndroidManifest.xml:9:5-20
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fd99e11cd01173fee4f1455ac2a7b6ae/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/be769dfb17ec26fb3b4410e074fd5125/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:14:9-54
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:16:9-40
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:16:9-40
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:10:9-38
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:10:9-38
 activity#com.example.dogfinder.EditUserActivity
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:17:9-63
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:17:9-63
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:17:19-51
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:17:19-51
 activity#com.example.dogfinder.LoginActivity
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:18:9-51
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:18:9-51
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:18:19-48
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:18:19-48
 activity#com.example.dogfinder.RegisterationActivity
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:19:9-59
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:19:9-59
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:19:19-56
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:19:19-56
 activity#com.example.dogfinder.MainActivity
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:20:9-50
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:20:9-50
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:20:19-47
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:20:19-47
 activity#com.example.dogfinder.SwipeScreen
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:21:9-49
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:21:9-49
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:21:19-46
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:21:19-46
 activity#com.example.dogfinder.History
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:22:9-45
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:22:9-45
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:22:19-42
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:22:19-42
 activity#com.example.dogfinder.addpet
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:23:9-44
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:23:9-44
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:23:19-41
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:23:19-41
 activity#com.example.dogfinder.findpet
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:24:9-45
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:24:9-45
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:24:19-42
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:24:19-42
 activity#com.example.dogfinder.ChooseLoginRegisterActivity
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:25:9-31:20
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:25:9-31:20
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:25:19-62
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:25:19-62
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:26:13-30:29
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:27:17-69
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:27:25-66
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:29:17-77
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:29:27-74
+activity#com.example.dogfinder.GalleryActivity
+ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:32:9-53
+	android:name
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml:32:19-50
 uses-sdk
-INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
-INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a9bbbd33569c34c3e579907646b7ac55/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a9bbbd33569c34c3e579907646b7ac55/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bb102245aa1d29477eafc4862e6b9797/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bb102245aa1d29477eafc4862e6b9797/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/61f997d55d230f195b22d883d754d11c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/61f997d55d230f195b22d883d754d11c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.lorentzos.swipecards:library:1.0.9] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/library-1.0.9.aar/63cab5f20cd0b1d3024e13d8ebd64253/AndroidManifest.xml:8:5-10:41
-MERGED from [com.lorentzos.swipecards:library:1.0.9] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/library-1.0.9.aar/63cab5f20cd0b1d3024e13d8ebd64253/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/38230df2c3b0cb18223c2054b9eb6643/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/38230df2c3b0cb18223c2054b9eb6643/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/e04456b82bbbe356c92392130b4506cd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/e04456b82bbbe356c92392130b4506cd/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/cd84851596437d52872127e11192ca78/AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/cd84851596437d52872127e11192ca78/AndroidManifest.xml:6:5-8:41
-MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/9af66c164767e943d9286512ea0a3a5f/AndroidManifest.xml:5:5-7:41
-MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/9af66c164767e943d9286512ea0a3a5f/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d0bf413ed234c0d20cda4be17a4e2677/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d0bf413ed234c0d20cda4be17a4e2677/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bde4822fec6b6e51fcb479de90340ff0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bde4822fec6b6e51fcb479de90340ff0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8f12250ba1342f8b130edb4b48d0625b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8f12250ba1342f8b130edb4b48d0625b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/dcb94d780548b0e9dcc8b4b09482eada/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/dcb94d780548b0e9dcc8b4b09482eada/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/da4c44bbeba2ceb20d54b07fc93717aa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/da4c44bbeba2ceb20d54b07fc93717aa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/3101cc0d249a80999b9a3bfa0a8d0d47/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/3101cc0d249a80999b9a3bfa0a8d0d47/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/3f510f241266a9aa0890d4de83ab693c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/3f510f241266a9aa0890d4de83ab693c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/7c2b93d44a5e3bcb68f1846dafe5677f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/7c2b93d44a5e3bcb68f1846dafe5677f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/ba7ce35ab0b82e2be96467fd8c26ab6a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/ba7ce35ab0b82e2be96467fd8c26ab6a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/f567002583072f09a88b88272bfcdc2d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/f567002583072f09a88b88272bfcdc2d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/68ee520e2f00eef022aaf5b33d781cbd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/68ee520e2f00eef022aaf5b33d781cbd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/ccfec2b6bc3edf6d89e0f4d2bfdffd79/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/ccfec2b6bc3edf6d89e0f4d2bfdffd79/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/3efe0c35bc14829f6ce55e8bc166a1c3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/3efe0c35bc14829f6ce55e8bc166a1c3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/4ccbabe5fe7f7672e43a4dca6e6c4c72/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/4ccbabe5fe7f7672e43a4dca6e6c4c72/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fd99e11cd01173fee4f1455ac2a7b6ae/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fd99e11cd01173fee4f1455ac2a7b6ae/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/665884ae323179b92a6045da3ac66dbc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/665884ae323179b92a6045da3ac66dbc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4b143d4f53c447efe2c02bb68dc00255/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4b143d4f53c447efe2c02bb68dc00255/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/1f88cce9d12f81d238a8db3684ff4466/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/1f88cce9d12f81d238a8db3684ff4466/AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ca513c991447a880d2230f4eb7c1c802/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ca513c991447a880d2230f4eb7c1c802/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/f4555ce94c8a4aa14630f9a851aefa10/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/f4555ce94c8a4aa14630f9a851aefa10/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/00f3b429f916b51394a52cc538724936/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/00f3b429f916b51394a52cc538724936/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/d9cecb32bfef5944ef2a037243b7da11/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/d9cecb32bfef5944ef2a037243b7da11/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7eb1ab895aa0f6e821c6863af00b671b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7eb1ab895aa0f6e821c6863af00b671b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/c96598156749a5f3a3cc6f321b2a6bee/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/c96598156749a5f3a3cc6f321b2a6bee/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/1b6c9a4c7f1867d93008970d80e79040/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/1b6c9a4c7f1867d93008970d80e79040/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/3b7f98bd19ee7f7ee61876b5172b1783/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/3b7f98bd19ee7f7ee61876b5172b1783/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d7a28c344559540b3dac1f814e1e569c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/meghnapai/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d7a28c344559540b3dac1f814e1e569c/AndroidManifest.xml:20:5-44
-INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
-INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
+INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
+INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/323702e4890a3f739c18efa4aadaacb5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/323702e4890a3f739c18efa4aadaacb5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/52569c765afa219f730e96174977e589/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/52569c765afa219f730e96174977e589/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/45e7d62901f9a62d706e151057e57ba1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/45e7d62901f9a62d706e151057e57ba1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.lorentzos.swipecards:library:1.0.9] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/library-1.0.9.aar/f9625c1b35ccfc9688abc6c5bc69d1e2/AndroidManifest.xml:8:5-10:41
+MERGED from [com.lorentzos.swipecards:library:1.0.9] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/library-1.0.9.aar/f9625c1b35ccfc9688abc6c5bc69d1e2/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/4d46f4e9c53da337dc9706c13245d499/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/4d46f4e9c53da337dc9706c13245d499/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/0e4108ce6c97a930bc74aa8e4c5b8c25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/0e4108ce6c97a930bc74aa8e4c5b8c25/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/7403cc02e7706e5a812de0fb846a2969/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/7403cc02e7706e5a812de0fb846a2969/AndroidManifest.xml:6:5-8:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/270109bde1f69397ed2ce88a6673e9d4/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/270109bde1f69397ed2ce88a6673e9d4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/36c64a8bda04de58e7e19a15bcac69e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/36c64a8bda04de58e7e19a15bcac69e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7064020f745c83839e922abaed3b89b3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7064020f745c83839e922abaed3b89b3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/021543ede1a0285cd2b28b8f75000879/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/021543ede1a0285cd2b28b8f75000879/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b56731ba86065006cee5873adeb43b35/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b56731ba86065006cee5873adeb43b35/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1146aaeb2a340c5ee4fd3ff310ef0c7f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1146aaeb2a340c5ee4fd3ff310ef0c7f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/4d25a670c1bb96db2b57a0e89a5142be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/4d25a670c1bb96db2b57a0e89a5142be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/e5264b904633d8c2fce45621306ff7ee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/e5264b904633d8c2fce45621306ff7ee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/e753b4eaa982db271d3f15c6fe6f94cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/e753b4eaa982db271d3f15c6fe6f94cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/6cb8d59ed32a999f0187c120087618fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/6cb8d59ed32a999f0187c120087618fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/914b02af867ba7d7b16195d7ae1311ba/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/914b02af867ba7d7b16195d7ae1311ba/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c40710fca8d4aae1b2f6e76cc74ae7d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c40710fca8d4aae1b2f6e76cc74ae7d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/6b622532279306c71931e67fa07715ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/6b622532279306c71931e67fa07715ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6537c3fd590448229e1e6316a7f91bc1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6537c3fd590448229e1e6316a7f91bc1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c8728e5de4121108b69ec8c268e7de69/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c8728e5de4121108b69ec8c268e7de69/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/be769dfb17ec26fb3b4410e074fd5125/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/be769dfb17ec26fb3b4410e074fd5125/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7d9e99b9f75e24f3e66418bd12f95424/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7d9e99b9f75e24f3e66418bd12f95424/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/98d6237e897024a7e7042a52fc1a2de8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/98d6237e897024a7e7042a52fc1a2de8/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/a079b87d8d5cb29cdf79becd970a6eb9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/a079b87d8d5cb29cdf79becd970a6eb9/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cd0b1e7dee0100d332ef23568ccdd9f4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cd0b1e7dee0100d332ef23568ccdd9f4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/89e0124319f3b85b41744c30bfef9e6e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/89e0124319f3b85b41744c30bfef9e6e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/7264f462e6566ebd6b741e8ecf6f38f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/7264f462e6566ebd6b741e8ecf6f38f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/110e3ebacd0e68e50ee5caa635808f1b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/110e3ebacd0e68e50ee5caa635808f1b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/e004e32a41c6bf949f9761a883103bb8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/e004e32a41c6bf949f9761a883103bb8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/dd02670410a34ac0f4286cc4978df71d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/dd02670410a34ac0f4286cc4978df71d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/28dac1097d06cc947655a415c1a7f7af/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/28dac1097d06cc947655a415c1a7f7af/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/df9943ecd80b922d7380bb76948e328e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/df9943ecd80b922d7380bb76948e328e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/9b3c931b9029a715c921a74dd4eb8024/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/carlosvides/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/9b3c931b9029a715c921a74dd4eb8024/AndroidManifest.xml:20:5-44
+INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
+INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
+		ADDED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/carlosvides/Downloads/Tinder-test1 2/app/src/main/AndroidManifest.xml

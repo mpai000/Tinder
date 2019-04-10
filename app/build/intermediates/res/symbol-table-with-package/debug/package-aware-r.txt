@@ -1109,6 +1109,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id check
 id checkbox
 id chronometer
 id clip_horizontal
@@ -1162,6 +1163,7 @@ id icon_group
 id ifRoom
 id image
 id imageView3
+id image_description
 id image_name
 id imglink
 id info
@@ -1356,6 +1358,7 @@ layout activity_app
 layout activity_choose_login_register
 layout activity_edit_user
 layout activity_findpet
+layout activity_gallery
 layout activity_history
 layout activity_login
 layout activity_main
