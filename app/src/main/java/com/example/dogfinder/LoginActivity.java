@@ -30,6 +30,9 @@ public class LoginActivity extends AppCompatActivity {
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                
+
                 Cursor checkPW = dogTinder.checkPW(mEmail.getText().toString(), mPassword.getText().toString());
                 if(checkPW.getCount() == 0){
                     Toast.makeText(LoginActivity.this,"Invalid email or password!",Toast.LENGTH_LONG).show();
