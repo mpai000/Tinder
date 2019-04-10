@@ -110,5 +110,10 @@ public class EditUserActivity extends AppCompatActivity {
     private void toastMessage(String message){
         Toast.makeText(EditUserActivity.this, message, Toast.LENGTH_LONG).show();
     }
+
+    @Override
+    public void onBackPressed() {
+        //do nothing to disable
+    }
 }
 

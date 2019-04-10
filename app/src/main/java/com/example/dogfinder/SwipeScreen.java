@@ -268,4 +268,9 @@ public class SwipeScreen extends AppCompatActivity {
         finish();
         return;
     }
+
+    @Override
+    public void onBackPressed() {
+        //do nothing to disable
+    }
 }

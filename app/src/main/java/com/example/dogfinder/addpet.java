@@ -16,6 +16,9 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.net.URL;
+import java.net.URLConnection;
+
 public class addpet extends AppCompatActivity {
 
     Spinner location, breed, maturity, gender, size;
@@ -109,14 +112,49 @@ public class addpet extends AppCompatActivity {
 
             }
 
-            Intent intent = new Intent(addpet.this, MainActivity.class);
-            intent.putExtra("sessionID", sessionID);
-            startActivity(intent);
-            finish();
-            return;
+                String dogLocation = location.getSelectedItem().toString();
+                String dogBreed = breed.getSelectedItem().toString();
+                String dogMaturity = maturity.getSelectedItem().toString();
+                String dogGender = gender.getSelectedItem().toString();
+                String dogSize = size.getSelectedItem().toString();
+                String DogName = dogName.getText().toString();
+                String dogPic = dogpicturelink.getText().toString();
+
+                //check link
+                if(!Patterns.WEB_URL.matcher(dogPic).matches()){
+                    //default dog pic
+                    dogPic = "https://i.imgur.com/ycZpu2c.png";
+                }
+
+
+                boolean insertData = dogTinder.addDogData(dogLocation,dogBreed,dogMaturity,dogGender,dogSize, (dogName.getText().toString()), dogPic);
+                if (insertData == true) {
+                    Toast.makeText(addpet.this, "Data succesfully inserted!", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(addpet.this, "Something went wrong", Toast.LENGTH_LONG).show();
+
+                }
+
+                Cursor checkDog = dogTinder.searchDogID(dogLocation, dogBreed, dogMaturity, dogGender, dogSize, DogName);
+                if (checkDog.moveToLast()) {
+                    Toast.makeText(addpet.this, "Successful data entry", Toast.LENGTH_LONG).show();
+                    int dogID = checkDog.getInt(0);
+                    dogTinder.upload(sessionID, dogID);
+
+                    Intent intent = new Intent(addpet.this, MainActivity.class);
+                    intent.putExtra("sessionID", sessionID);
+                    startActivity(intent);
+                    finish();
+                    return;
+                } else {
+                    Toast.makeText(addpet.this, "Invalid Insertion of data", Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
 
-
+    @Override
+    public void onBackPressed() {
+        //do nothing to disable
+    }
 }

@@ -101,12 +101,12 @@ public class findpet extends AppCompatActivity {
                 return;
             }
         });
-
-
     }
 
-
-
+    @Override
+    public void onBackPressed() {
+        //do nothing to disable
+    }
 }
 
 

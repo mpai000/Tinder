@@ -6,10 +6,10 @@
     <string-array name="Location">
         <item> Bronx </item>
         <item> Brooklyn </item>
-        <item> New York </item>
+        <item> Manhattan </item>
         <item> Queens </item>
         <item> Staten Island </item>
-        <item> Any </item>
+        <item> Outside of New York </item>
     </string-array>
 
     <string-array name="Breed">
@@ -17,7 +17,6 @@
         <item> Breed2 </item>
         <item> Breed3 </item>
         <item> Breed4 </item>
-        <item> Any </item>
     </string-array>
 
     <string-array name="Maturity">
@@ -25,13 +24,11 @@
         <item> Young </item>
         <item> Adult </item>
         <item> Senior </item>
-        <item> Any </item>
     </string-array>
 
     <string-array name="Gender">
         <item> Male </item>
         <item> Female </item>
-        <item> Any </item>
     </string-array>
 
     <string-array name="Size">
@@ -39,6 +36,5 @@
         <item> M </item>
         <item> L </item>
         <item> XL </item>
-        <item> Any </item>
     </string-array>
 </resources>
