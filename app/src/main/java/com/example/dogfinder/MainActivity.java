@@ -83,16 +83,31 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Cursor data = dogTinder.getUserInfo(sessionID);
-                int dataName = -1;
-                while(data.moveToNext()) {
-                    dataName = data.getInt(3);
-                }
-                if(dataName>-1){
-                    Toast.makeText(MainActivity.this,"VALUE IS" + String.valueOf(sessionID),Toast.LENGTH_LONG).show();
-//                    Intent editUser = new Intent(MainActivity.this, EditUserActivity.class);
-//                    editUser.putExtra("sessionID", sessionID);
-//                    editUser.putExtra("name", dataName);
-//                    startActivity(editUser);
+                String dataName;
+                String dataLname;
+                String dataEmail;
+                String dataPassword;
+                String dataLocation;
+                String datalink;
+
+                if(data.moveToNext()){
+                    dataEmail=data.getString(1);
+                    dataPassword=data.getString(2);
+                    dataLocation= data.getString(3);
+                    dataLname=data.getString(5);
+                    dataName= data.getString(4);
+                    datalink=data.getString(6);
+
+                    //Toast.makeText(MainActivity.this,"VALUE IS" + dataName,Toast.LENGTH_LONG).show();
+                    Intent editUser = new Intent(MainActivity.this, EditUserActivity.class);
+                    editUser.putExtra("sessionID", sessionID);
+                    editUser.putExtra("name", dataName);
+                    editUser.putExtra("lname", dataLname);
+                    editUser.putExtra("location", dataLocation);
+                    editUser.putExtra("email", dataEmail);
+                    editUser.putExtra("password", dataPassword);
+                    editUser.putExtra("link", datalink);
+                    startActivity(editUser);
                 }
                 else{
                     Toast.makeText(MainActivity.this,"no id",Toast.LENGTH_LONG).show();

@@ -1147,6 +1147,7 @@ id filled
 id findpet
 id firstName
 id fixed
+id fname
 id forever
 id frame
 id ghost_view
@@ -1175,8 +1176,11 @@ id lastname
 id left
 id line1
 id line3
+id link
 id listMode
 id list_item
+id lname
+id location
 id login
 id masked
 id message

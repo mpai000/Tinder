@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -215,6 +216,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         data = db.rawQuery("SELECT * FROM user_table WHERE " + USER_COL2 + "= ?", search_cols);
 
         return data;
+    }
+
+    public boolean updateUser(String nemail, String npass, String nloc, String nfname, String nlname, String nlink, int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String[] search_cols=new String[]{String.valueOf(id)};
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(USER_COL1,id);
+        contentValues.put(USER_COL2,nemail);
+        contentValues.put(USER_COL3,npass);
+        contentValues.put(USER_COL4,nloc);
+        contentValues.put(USER_COL5,nfname);
+        contentValues.put(USER_COL6,nlname);
+        contentValues.put(USER_COL7,nlink);
+
+        db.update(USER_TABLE_NAME, contentValues, "userID = ?",search_cols);
+        return true;
     }
 
 }

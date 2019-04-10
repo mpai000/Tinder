@@ -17,10 +17,60 @@
         tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/text"
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="location"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="First name"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/lname"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Last name"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/link"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Link"
             android:inputType="textPersonName"
             android:layout_gravity="center"
             android:singleLine="true"
@@ -34,17 +84,17 @@
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:background="@drawable/buttonstyle"
-            android:text="Find Your Chews"
+            android:text="Update"
             android:textSize="20dp"
             android:textColor="#fff" />
         <Button
-            android:id="@+id/delete"
+            android:id="@+id/check"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:background="@drawable/buttonstyle"
-            android:text="Add A Chew"
+            android:text="check"
             android:textSize="20dp"
             android:textColor="#fff" />
 
