@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:text="Canada"
+        android:hint="Name"
         android:textColor="#000"
         android:textSize="20sp" />
 
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:text="Desc"
+        android:hint="description"
         android:textColor="#000"
         android:textSize="20sp" />
 
@@ -44,7 +44,7 @@
         android:id="@+id/send_msg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/buttonstyle"
         android:gravity="center|bottom"
         android:text="Send Message"

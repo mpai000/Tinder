@@ -44,7 +44,7 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawableLeft="@drawable/ic_textsms_black_24dp"
             android:drawablePadding="10dp"
             android:hint="Enter Message"
             android:inputType="textPersonName"
