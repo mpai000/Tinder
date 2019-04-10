@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addpet">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        tools:ignore="MissingConstraints">
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Add A Chew For Adoption"-->
+        <!--android:textSize="30sp"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--/>-->
+
+    <EditText
+        android:id="@+id/nameentry"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Name of Dog"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_pets_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="350dp"
+            android:paddingLeft="5dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Gender"
+            android:drawableLeft="@drawable/ic_wc_black_24dp"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tvBreed"
+            android:layout_width="350dp"
+            android:paddingLeft="5dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Breed"
+            android:drawableLeft="@drawable/ic_group_black_24dp"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
+        <Spinner
+            android:id="@+id/spinnerBreed"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:id="@+id/tvSize"
+            android:layout_width="350dp"
+            android:paddingLeft="5dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Size"
+            android:drawableLeft="@drawable/ic_text_fields_black_24dp"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerSize"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tvMaturity"
+            android:layout_width="350dp"
+            android:paddingLeft="5dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Maturity"
+            android:drawableLeft="@drawable/ic_android_black_24dp"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerMaturity"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="350dp"
+            android:paddingLeft="5dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_add_location_black_24dp"
+            android:drawablePadding="10dp"
+            android:text="Location"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerLocation"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+
+        <EditText
+            android:id="@+id/imglink"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Add Link to picture of your dog"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_insert_link_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp"
+        />
+
+
+        <Button
+            android:id="@+id/btnAddData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Add Your Chew"
+            android:textSize="20dp"
+            android:textColor="#fff" />
+
+
+
+
+
+
+    </LinearLayout>l
+</android.support.constraint.ConstraintLayout>

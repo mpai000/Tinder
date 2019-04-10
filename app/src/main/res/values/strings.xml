@@ -1,3 +1,40 @@
 <resources>
-    <string name="app_name">Tinder</string>
+    <string name="app_name">DogTinder</string>
+    <string name="menu_setting">setting</string>
+    <string name="menu_back">menu_back</string>
+
+    <string-array name="Location">
+        <item> Bronx </item>
+        <item> Brooklyn </item>
+        <item> Manhattan </item>
+        <item> Queens </item>
+        <item> Staten Island </item>
+        <item> Outside of New York </item>
+    </string-array>
+
+    <string-array name="Breed">
+        <item> Breed1 </item>
+        <item> Breed2 </item>
+        <item> Breed3 </item>
+        <item> Breed4 </item>
+    </string-array>
+
+    <string-array name="Maturity">
+        <item> Baby </item>
+        <item> Young </item>
+        <item> Adult </item>
+        <item> Senior </item>
+    </string-array>
+
+    <string-array name="Gender">
+        <item> Male </item>
+        <item> Female </item>
+    </string-array>
+
+    <string-array name="Size">
+        <item> S </item>
+        <item> M </item>
+        <item> L </item>
+        <item> XL </item>
+    </string-array>
 </resources>

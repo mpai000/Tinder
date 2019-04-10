@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,47 +8,86 @@
     tools:context=".ChooseLoginRegisterActivity"
     android:orientation="vertical">
 
-<LinearLayout
-    android:paddingTop="150dp"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:orientation="vertical"
+        android:paddingTop="70dp"
+        android:paddingBottom="70dp"
         android:layout_gravity="center"
-        android:textColor="@color/black"
-        android:text="Welcome to Pick-A-Chew"/>
-    <Button
-        android:id="@+id/login"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/buttonstyle"
-        android:textColor="#fff"
-        android:text="Login"
-        />
-    <Button
-        android:id="@+id/register_human"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/buttonstyle"
-        android:textColor="#fff"
-        android:text="Register as a Human"
-        />
+        android:background="#3361A4">
 
-    <Button
-        android:id="@+id/register_chew"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/buttonstyle"
-        android:textColor="#fff"
-        android:text="Register as a Chew"
-        />
-</LinearLayout>
+        <TextView
+            android:id="@+id/WelcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Pick-A-Chew"
+            android:textColor="#fff"
+            android:textSize="50sp" />
 
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/infoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/buttonstyle"
+                android:text=" More Info "
+                android:textSize="15sp"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:background="@drawable/buttonstyle"
+                android:text=" register  "
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="EMAIL"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="PASSWORD"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="15dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Find your Chew!"
+            android:textColor="#fff" />
+    </LinearLayout>
 </LinearLayout>

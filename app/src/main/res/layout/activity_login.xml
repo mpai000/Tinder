@@ -12,39 +12,48 @@
         android:layout_height="536dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical"
+        android:layout_gravity="center"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:paddingTop="200dp"
-        tools:layout_editor_absoluteY="31dp">
+        >
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="email"
+            android:hint="Enter Email"
             android:textSize="20dp"
             android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="10dp"
             android:singleLine="true"
             android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="password"
+            android:layout_gravity="center"
+            android:hint="Enter Password"
             android:textSize="20dp"
             android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="10dp"
             android:singleLine="true"
             android:textColor="@color/black" />
 
         <Button
             android:id="@+id/login"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:layout_gravity="center"
             android:background="@drawable/buttonstyle"
             android:textColor="#fff"
-            android:text="Login"
+            android:text="Find your Chew"
             />
     </LinearLayout>
 </LinearLayout>
