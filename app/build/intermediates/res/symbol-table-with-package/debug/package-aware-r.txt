@@ -1040,6 +1040,7 @@ drawable ic_pets_black_24dp
 drawable ic_phone_black_24dp
 drawable ic_settings_black_24dp
 drawable ic_text_fields_black_24dp
+drawable ic_textsms_black_24dp
 drawable ic_wc_black_24dp
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1281,7 +1282,6 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
