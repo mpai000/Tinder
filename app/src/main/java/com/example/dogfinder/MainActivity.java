@@ -83,18 +83,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Cursor data = dogTinder.getUserInfo(sessionID);
-                int dataName = -1;
-                while(data.moveToNext()) {
-                    dataName = data.getInt(3);
-                }
-                if(dataName>-1){
-                    Toast.makeText(MainActivity.this,"VALUE IS" + String.valueOf(sessionID),Toast.LENGTH_LONG).show();
+                String dataName;
+
+                if(data.moveToNext()){
+                    dataName = data.getString(4);
+
+                    Toast.makeText(MainActivity.this,"VALUE IS " + dataName,Toast.LENGTH_LONG).show();
 //                    Intent editUser = new Intent(MainActivity.this, EditUserActivity.class);
 //                    editUser.putExtra("sessionID", sessionID);
 //                    editUser.putExtra("name", dataName);
 //                    startActivity(editUser);
-                }
-                else{
+                }else{
                     Toast.makeText(MainActivity.this,"no id",Toast.LENGTH_LONG).show();
                 }
 
