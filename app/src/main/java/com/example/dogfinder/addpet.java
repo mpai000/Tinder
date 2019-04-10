@@ -102,6 +102,7 @@ public class addpet extends AppCompatActivity {
                 String dogGender = gender.getSelectedItem().toString();
                 String dogSize = size.getSelectedItem().toString();
 
+                String DogName = dogName.getText().toString();
                 boolean insertData = dogTinder.addDogData(dogLocation, dogBreed, dogMaturity, dogGender, dogSize, (dogName.getText().toString()), dogpicturelink.getText().toString());
                 if (insertData == true) {
                     Toast.makeText(addpet.this, "Data succesfully inserted!", Toast.LENGTH_LONG).show();
@@ -110,7 +111,7 @@ public class addpet extends AppCompatActivity {
 
                 }
 
-                Cursor checkDog = dogTinder.searchDogData(dogLocation, dogBreed, dogMaturity, dogGender, dogSize);
+                Cursor checkDog = dogTinder.searchDogID(dogLocation, dogBreed, dogMaturity, dogGender, dogSize, DogName);
                 {
                     if (checkDog.getCount() == 0) {
                         Toast.makeText(addpet.this, "Invalid Insertion of data", Toast.LENGTH_LONG).show();

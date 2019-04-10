@@ -177,8 +177,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public boolean upload(int userID, int dogID){
         SQLiteDatabase db = this.getReadableDatabase();
         String[] search_cols = new String[]{String.valueOf(userID), String.valueOf(dogID)};
+        Cursor data = db.rawQuery("SELECT * FROM " + UPLOAD_TABLE_NAME + " WHERE " + UPLOAD_COL1 + "= ? AND " + UPLOAD_COL2 + "= ? ", search_cols);
 
         ContentValues contentValues = new ContentValues();
+
+
+        if (data.moveToFirst()) {
+            //Record exist
+//            db.update(UPLOAD_TABLE_NAME, contentValues, UPLOAD_COL1 + "= ? AND " + UPLOAD_COL2 + "= ?", search_cols);
+            data.close();
+            return true;
+        }
+
+        //available
         contentValues.put(UPLOAD_COL1,userID);
         contentValues.put(UPLOAD_COL2,dogID);
         long result = db.insertOrThrow(UPLOAD_TABLE_NAME, null, contentValues);
