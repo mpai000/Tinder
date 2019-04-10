@@ -1022,6 +1022,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable gradient
 drawable ic_add_location_black_24dp
 drawable ic_android_black_24dp
 drawable ic_email_black_24dp
@@ -1131,6 +1132,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id dog_description
 id edit_query
 id email
 id end
@@ -1162,6 +1164,7 @@ id icon_group
 id ifRoom
 id image
 id imageView3
+id image_description
 id image_name
 id imglink
 id info
@@ -1197,6 +1200,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id outline
+id owner_description
 id packed
 id parallax
 id parent
@@ -1207,11 +1211,14 @@ id password
 id percent
 id pin
 id profile
+id profile_image
 id progress_circular
 id progress_horizontal
 id radio
+id recev_msg
 id recyclerview
 id register
+id rep_name
 id right
 id right_icon
 id right_side
@@ -1237,6 +1244,9 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id send
+id send_msg
+id sent_msg
 id shortcut
 id showCustom
 id showHome
@@ -1299,7 +1309,9 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_name
 id view_offset_helper
+id view_owner
 id visible
 id withText
 id wrap
@@ -1356,10 +1368,15 @@ layout activity_app
 layout activity_choose_login_register
 layout activity_edit_user
 layout activity_findpet
+layout activity_gallery
 layout activity_history
 layout activity_login
 layout activity_main
+layout activity_ownerprofile
+layout activity_receivedmessages
 layout activity_registeration
+layout activity_sendmessage
+layout activity_sentmessages
 layout activity_swipe
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

@@ -44,6 +44,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String UPLOAD_COL1 = "userID";
     public static final String UPLOAD_COL2 = "dogID";
 
+    public static final String MESSAGE_TABLE_NAME = "message_table";
+    public static final String MESSAGE_COL1 = "msgID";
+    public static final String MESSAGE_COL2 = "senderID";
+    public static final String MESSAGE_COL3 = "receiverID";
+    public static final String MESSAGE_COL4 = "message";
 
     public static synchronized DatabaseHelper getInstance(Context context) {
 
@@ -68,7 +73,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String CREATE_DOG_TABLE = "CREATE TABLE dog_table(dogID INTEGER PRIMARY KEY AUTOINCREMENT,dogLocation TEXT, dogBreed TEXT, dogMaturity TEXT, dogGender TEXT, dogSize TEXT, dogName TEXT, dogPictureLink TEXT)";
         db.execSQL(CREATE_DOG_TABLE);
 
-        String CREATE_USER_TABLE = "CREATE TABLE user_table(userID INTEGER PRIMARY KEY AUTOINCREMENT,email TEXT, password TEXT, userLocation TEXT, firstName TEXT, lastName TEXT, age INTEGER, userPictureLink TEXT)";
+        String CREATE_USER_TABLE = "CREATE TABLE user_table(userID INTEGER PRIMARY KEY AUTOINCREMENT,email TEXT, password TEXT, userLocation TEXT, firstName TEXT, lastName TEXT, userPictureLink TEXT)";
         db.execSQL(CREATE_USER_TABLE);
 
         String CREATE_SWIPE_TABLE = "CREATE TABLE swipe_table(userID INTEGER,dogID INTEGER, direction TEXT, FOREIGN KEY(userID) REFERENCES user_table(userID), FOREIGN KEY(dogID) REFERENCES dog_table(dogID), PRIMARY KEY(userID, dogID))";
@@ -76,6 +81,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         String CREATE_UPLOAD_TABLE = "CREATE TABLE upload_table(userID INTEGER,dogID INTEGER, FOREIGN KEY(userID) REFERENCES user_table(userID), FOREIGN KEY(dogID) REFERENCES dog_table(dogID), PRIMARY KEY(userID, dogID))";
         db.execSQL(CREATE_UPLOAD_TABLE);
+
+        String CREATE_MESSAGE_TABLE = "CREATE TABLE message_table(msgID INTEGER PRIMARY KEY AUTOINCREMENT,senderID INTEGER, receiverID INTEGER, message TEXT, FOREIGN KEY(senderID) REFERENCES user_table(userID), FOREIGN KEY(receiverID) REFERENCES user_table(userID))";
+        db.execSQL(CREATE_MESSAGE_TABLE);
     }
 
     @Override
@@ -84,6 +92,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS user_table");
         db.execSQL("DROP TABLE IF EXISTS swipe_table");
         db.execSQL("DROP TABLE IF EXISTS upload_table");
+        db.execSQL("DROP TABLE IF EXISTS message_table");
         onCreate(db);
     }
 
@@ -123,6 +132,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(USER_COL4,userLocation);
         contentValues.put(USER_COL5,firstName);
         contentValues.put(USER_COL6,lastName);
+        contentValues.put(USER_COL7,"https://i.imgur.com/bMJ6N3r.png");
 
         long result = db.insertOrThrow(USER_TABLE_NAME, null, contentValues);
         db.close();
@@ -200,6 +210,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
         }
 
+    }
+
+    public Cursor getOwner(int dogID){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String[] search_cols = new String[]{String.valueOf(dogID)};
+
+        Cursor data;
+        data = db.rawQuery("SELECT * FROM upload_table WHERE " + UPLOAD_COL2 + "= ?", search_cols);
+
+        return data;
     }
 
     public Cursor searchDogData(String dogLocation, String dogBreed, String dogMaturity, String dogGender, String dogSize){
@@ -280,4 +300,50 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
+    public boolean sendMessage(int senderID, int receiverID, String message){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(MESSAGE_COL2,senderID);
+        contentValues.put(MESSAGE_COL3,receiverID);
+        contentValues.put(MESSAGE_COL4,message);
+
+        long result = db.insertOrThrow(MESSAGE_TABLE_NAME,null,contentValues);
+        db.close();
+        if (result == -1){
+            return false;
+        } else
+        {
+            return true;
+        }
+    }
+
+    public Cursor getSentMessages(int senderID){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String[] search_cols = new String[]{String.valueOf(senderID)};
+
+        Cursor data;
+        data = db.rawQuery("SELECT * FROM message_table WHERE " + MESSAGE_COL2 + "= ?", search_cols);
+
+        return data;
+    }
+
+    public Cursor getReceviedMessages(int receiverID){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String[] search_cols = new String[]{String.valueOf(receiverID)};
+
+        Cursor data;
+        data = db.rawQuery("SELECT * FROM message_table WHERE " + MESSAGE_COL3 + "= ?", search_cols);
+
+        return data;
+    }
+
+    public Cursor getMessage(int msgID){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String[] search_cols = new String[]{String.valueOf(msgID)};
+
+        Cursor data;
+        data = db.rawQuery("SELECT * FROM message_table WHERE " + MESSAGE_COL1 + "= ?", search_cols);
+
+        return data;
+    }
 }

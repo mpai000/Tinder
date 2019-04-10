@@ -1,6 +1,8 @@
 package com.example.dogfinder;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -21,14 +23,20 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     private static final String TAG = "RecyclerViewAdapter";
 
+
     private ArrayList<String> mImageNames = new ArrayList<>();
     private ArrayList<String> mImages = new ArrayList<>();
+    private ArrayList<String> mDogIDs = new ArrayList<>();
+
     private Context mContext;
 
-    public RecyclerViewAdapter(Context mContext, ArrayList<String> mImageNames, ArrayList<String> mImages) {
+    int sessionID;
+
+    public RecyclerViewAdapter(Context mContext, ArrayList<String> mImageNames, ArrayList<String> mImages, ArrayList<String> mDogIDs) {
         this.mImageNames = mImageNames;
         this.mImages = mImages;
         this.mContext = mContext;
+        this.mDogIDs = mDogIDs;
     }
 
     @NonNull
@@ -41,7 +49,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
 
         Log.d(TAG,"onBindViewHolder: called.");
 
@@ -55,10 +63,25 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d(TAG, "onClick: clicked on" + mImageNames.get(position));
-                Toast.makeText(mContext, mImageNames.get(position), Toast.LENGTH_SHORT).show();
-            }
+                Intent intent = ((Activity) mContext).getIntent();
+                sessionID = intent.getExtras().getInt("sessionID");
 
+                Intent passIntent = new Intent(mContext, GalleryActivity.class);
+                passIntent.putExtra("sessionID", sessionID);
+                passIntent.putExtra("dogID", Integer.parseInt(mDogIDs.get(position)));
+
+                mContext.startActivity(passIntent);
+                ((Activity) mContext).finish();
+
+                Toast.makeText(mContext, ""+ mDogIDs.get(position),Toast.LENGTH_LONG).show();
+
+                Log.d(TAG, "onClick: clicked on" + mImageNames.get(position));
+                //Toast.makeText(mContext, mImageNames.get(position), Toast.LENGTH_SHORT).show();
+
+                return;
+
+
+            }
         });
 
     }

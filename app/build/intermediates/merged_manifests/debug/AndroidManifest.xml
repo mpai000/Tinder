@@ -24,6 +24,11 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.dogfinder.EditUserActivity" />
+        <activity android:name="com.example.dogfinder.GalleryActivity" />
+        <activity android:name="com.example.dogfinder.ReceivedMessages" />
+        <activity android:name="com.example.dogfinder.SentMessages" />
+        <activity android:name="com.example.dogfinder.ownerProfile" />
+        <activity android:name="com.example.dogfinder.SendMessageActivity" />
         <activity android:name="com.example.dogfinder.LoginActivity" />
         <activity android:name="com.example.dogfinder.RegisterationActivity" />
         <activity android:name="com.example.dogfinder.MainActivity" />

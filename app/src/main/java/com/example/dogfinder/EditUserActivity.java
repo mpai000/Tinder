@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -70,6 +71,14 @@ public class EditUserActivity extends AppCompatActivity {
                 String item5 = edit_ln.getText().toString();
                 String item6 = edit_link.getText().toString();
                 String item3 = edit_loc.getText().toString();
+
+                //check link
+                if(!Patterns.WEB_URL.matcher(item6).matches()){
+                    //default dog pic
+                    item6 = "https://i.imgur.com/bMJ6N3r.png";
+                }
+
+
                 mDatabaseHelper.updateUser(item1, item2, item3, item4, item5, item6, selectedID);
 
                 Intent intent = new Intent(EditUserActivity.this, MainActivity.class);
@@ -79,11 +88,7 @@ public class EditUserActivity extends AppCompatActivity {
 
             }
         });
-
-
     }
-
-
 
     private void toastMessage(String message){
         Toast.makeText(EditUserActivity.this, message, Toast.LENGTH_LONG).show();

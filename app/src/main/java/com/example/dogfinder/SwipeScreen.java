@@ -70,6 +70,7 @@ public class SwipeScreen extends AppCompatActivity {
                 intent.putExtra("sessionID", sessionID);
                 startActivity(intent);
                 finish();
+                return;
             }
         });
 
@@ -158,22 +159,9 @@ public class SwipeScreen extends AppCompatActivity {
 
         Cursor data = dogTinder.searchDogData(dogLocation,dogBreed,dogMaturity,dogGender,dogSize);
         if(data.getCount()==0){
-            display("Error","No data found");
             return;
         }
-        StringBuffer buffer = new StringBuffer();
-
-
         while (data.moveToNext()){
-
-            buffer.append("ID: " +data.getString(0)+ "\n");
-            buffer.append("Name: " +data.getString(6)+ "\n");
-            buffer.append("Location: " +data.getString(1)+ "\n");
-            buffer.append("Breed: " +data.getString(2)+ "\n");
-            buffer.append("Maturity: " +data.getString(3)+ "\n");
-            buffer.append("Gender: " +data.getString(4)+ "\n");
-            buffer.append("Size: " +data.getString(5)+ "\n");
-
             dogs.add(new DogData(data.getString(0),
                     data.getString(1),
                     data.getString(2),
@@ -184,17 +172,6 @@ public class SwipeScreen extends AppCompatActivity {
                     data.getString(7)));
 
         }
-
-        display("All Chews Found: ", buffer.toString());
-    }
-
-    public void display(String title, String message){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setCancelable(true);
-        builder.setTitle(title);
-        builder.setMessage(message);
-        builder.show();
-
     }
 
     public static class ViewHolder {
@@ -261,13 +238,6 @@ public class SwipeScreen extends AppCompatActivity {
         }
     }
 
-    public void goBack(){
-        Intent intent = new Intent(SwipeScreen.this, MainActivity.class);
-        intent.putExtra("sessionID", sessionID);
-        startActivity(intent);
-        finish();
-        return;
-    }
 
     @Override
     public void onBackPressed() {

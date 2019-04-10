@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class History extends AppCompatActivity {
 
     int sessionID;
+
     Toolbar mtoolbar;
     TextView toolbarTitle;
 
@@ -23,6 +24,8 @@ public class History extends AppCompatActivity {
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();
+    private ArrayList<String> mDogIDs = new ArrayList<>();
+
 
     int dogID, userID;
 
@@ -33,6 +36,8 @@ public class History extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
+        sessionID = getIntent().getExtras().getInt("sessionID");
+
         mtoolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mtoolbar);
         getSupportActionBar().setTitle(null);
@@ -42,7 +47,6 @@ public class History extends AppCompatActivity {
         mtoolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int sessionID = getIntent().getExtras().getInt("sessionID");
                 Intent intent = new Intent(History.this, MainActivity.class);
                 intent.putExtra("sessionID", sessionID);
                 startActivity(intent);
@@ -59,6 +63,7 @@ public class History extends AppCompatActivity {
         while (swipeData.moveToNext()){
             Cursor dogData = dogTinder.getDogInfo(swipeData.getInt(1));
             dogData.moveToNext();
+            mDogIDs.add(dogData.getString(0));
             mNames.add(dogData.getString(6));
             mImageUrls.add(dogData.getString(7));
         }
@@ -72,8 +77,11 @@ public class History extends AppCompatActivity {
     }
 
     private void initRecyclerView(){
+        Intent intent = new Intent(History.this, MainActivity.class);
+        intent.putExtra("sessionID", sessionID);
+
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this,mNames,mImageUrls);
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this,mNames, mImageUrls, mDogIDs);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

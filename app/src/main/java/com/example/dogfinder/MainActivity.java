@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.ToolbarWidgetWrapper;
 import android.util.Log;
@@ -14,13 +16,18 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     int sessionID;
-    Button findpet, addpet, history, mprofile;
+    Button findpet, addpet, history, mprofile, sendmsg, receivemsg;
     DatabaseHelper dogTinder;
     Toolbar mtoolbar;
     TextView toolbarTitle;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         sessionID = getIntent().getExtras().getInt("sessionID");
-
         dogTinder = MyApplication.getDbAdapter().getInstance(getApplicationContext());
 
         findpet = (Button) findViewById(R.id.findpet);
@@ -75,8 +81,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //NEED HELP HEREEE
-        // I'm trying to pass this to EditUSerActivity so the user can edit their stuff from there
 
         mprofile = (Button) findViewById(R.id.profile);
         mprofile.setOnClickListener(new View.OnClickListener() {
@@ -110,8 +114,31 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-    }
 
+        sendmsg = (Button) findViewById(R.id.sent_msg);
+        sendmsg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SentMessages.class);
+                intent.putExtra("sessionID", sessionID);
+                startActivity(intent);
+                finish();
+                return;
+            }
+        });
+
+        receivemsg = (Button) findViewById(R.id.recev_msg);
+        receivemsg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ReceivedMessages.class);
+                intent.putExtra("sessionID", sessionID);
+                startActivity(intent);
+                finish();
+                return;
+            }
+        });
+}
 
 
     public void openfindpetactivity(){
