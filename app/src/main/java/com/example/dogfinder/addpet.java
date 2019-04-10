@@ -67,7 +67,7 @@ public class addpet extends AppCompatActivity {
         spinnerBreed.setAdapter(adapter1);
 
         Spinner spinnerMaturity = findViewById(R.id.spinnerMaturity);
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.Maturity,android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.Age,android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMaturity.setAdapter(adapter2);
 
@@ -114,29 +114,38 @@ public class addpet extends AppCompatActivity {
                     dogPic = "https://i.imgur.com/ycZpu2c.png";
                 }
 
+                String tname = dogName.getText().toString();
 
-                boolean insertData = dogTinder.addDogData(dogLocation,dogBreed,dogMaturity,dogGender,dogSize, (dogName.getText().toString()), dogPic);
-                if (insertData == true) {
-                    Toast.makeText(addpet.this, "Data succesfully inserted!", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(addpet.this, "Something went wrong", Toast.LENGTH_LONG).show();
+                if(tname.matches("")){
+                    Toast.makeText(addpet.this, "Must Include a Name for your Dog", Toast.LENGTH_LONG).show();
 
                 }
+                else{
+                    boolean insertData = dogTinder.addDogData(dogLocation,dogBreed,dogMaturity,dogGender,dogSize, (dogName.getText().toString()), dogPic);
+                    if (insertData == true) {
+                        Toast.makeText(addpet.this, "Data succesfully inserted!", Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(addpet.this, "Something went wrong", Toast.LENGTH_LONG).show();
 
-                Cursor checkDog = dogTinder.searchDogID(dogLocation, dogBreed, dogMaturity, dogGender, dogSize, DogName);
-                if (checkDog.moveToLast()) {
-                    Toast.makeText(addpet.this, "Successful data entry", Toast.LENGTH_LONG).show();
-                    int dogID = checkDog.getInt(0);
-                    dogTinder.upload(sessionID, dogID);
+                    }
 
-                    Intent intent = new Intent(addpet.this, MainActivity.class);
-                    intent.putExtra("sessionID", sessionID);
-                    startActivity(intent);
-                    finish();
-                    return;
-                } else {
-                    Toast.makeText(addpet.this, "Invalid Insertion of data", Toast.LENGTH_LONG).show();
+                    Cursor checkDog = dogTinder.searchDogID(dogLocation, dogBreed, dogMaturity, dogGender, dogSize, DogName);
+                    if (checkDog.moveToLast()) {
+                        Toast.makeText(addpet.this, "Successful data entry", Toast.LENGTH_LONG).show();
+                        int dogID = checkDog.getInt(0);
+                        dogTinder.upload(sessionID, dogID);
+
+                        Intent intent = new Intent(addpet.this, MainActivity.class);
+                        intent.putExtra("sessionID", sessionID);
+                        startActivity(intent);
+                        finish();
+                        return;
+                    } else {
+                        Toast.makeText(addpet.this, "Invalid Insertion of data", Toast.LENGTH_LONG).show();
+                    }
                 }
+
+
             }
         });
     }

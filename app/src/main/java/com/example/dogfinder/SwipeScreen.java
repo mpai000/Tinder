@@ -104,7 +104,7 @@ public class SwipeScreen extends AppCompatActivity {
 
                 boolean insertData = dogTinder.swipe(sessionID,Integer.parseInt(id),"left");
                 if(insertData == true){
-                    Toast.makeText(SwipeScreen.this, id +" left", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SwipeScreen.this, "BOOOOO", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(SwipeScreen.this,"Something went wrong!",Toast.LENGTH_LONG).show();
                 }
@@ -116,7 +116,7 @@ public class SwipeScreen extends AppCompatActivity {
 
                 boolean insertData = dogTinder.swipe(sessionID,Integer.parseInt(id),"right");
                 if(insertData == true){
-                    Toast.makeText(SwipeScreen.this, id +" right", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SwipeScreen.this, " YAAAYYY", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(SwipeScreen.this,"Something went wrong!",Toast.LENGTH_LONG).show();
                 }
@@ -142,7 +142,7 @@ public class SwipeScreen extends AppCompatActivity {
         flingContainer.setOnItemClickListener(new SwipeFlingAdapterView.OnItemClickListener() {
             @Override
             public void onItemClicked(int itemPosition, Object dataObject) {
-                Toast.makeText(SwipeScreen.this, "click", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SwipeScreen.this, "click", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -226,7 +226,7 @@ public class SwipeScreen extends AppCompatActivity {
             viewHolder.DataText.setText("Name: " + list.get(position).getDogName() + "\n" +
                                         "Location: " + list.get(position).getDogLocation() + "\n" +
                                         "Breed: " + list.get(position).getDogBreed() + "\n" +
-                                        "Maturity: " + list.get(position).getDogMaturity() + "\n" +
+                                        "Age: " + list.get(position).getDogMaturity() + "\n" +
                                         "Gender: " + list.get(position).getDogSize() + "\n" +
                                         "Size: " + list.get(position).getDogGender() + "\n");
 

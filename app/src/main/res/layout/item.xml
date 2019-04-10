@@ -10,7 +10,8 @@
     android:paddingTop="20sp"
     android:paddingBottom="20sp"
     android:outlineProvider="bounds"
-    android:clipToPadding="false">
+    android:clipToPadding="false"
+    >
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView"
@@ -18,7 +19,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:elevation="2dp"
-        app:cardCornerRadius="4dp">
+        app:cardCornerRadius="4dp"
+        >
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -29,7 +31,7 @@
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/offWhite"
+                android:background="@color/white"
                 android:gravity="left|bottom"
                 android:padding="20dp"
                 android:textColor="@android:color/black"

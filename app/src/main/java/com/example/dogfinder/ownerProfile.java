@@ -70,7 +70,7 @@ public class ownerProfile extends AppCompatActivity {
         getSupportActionBar().setTitle(null);
         mtoolbar.setNavigationIcon(R.drawable.ic_keyboard_backspace_black_24dp);
         toolbarTitle = (TextView) findViewById(R.id.title);
-        toolbarTitle.setText("History");
+        toolbarTitle.setText("Dog Owner Profile");
         mtoolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

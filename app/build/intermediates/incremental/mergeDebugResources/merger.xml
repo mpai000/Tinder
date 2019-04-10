@@ -3632,17 +3632,8 @@
         <item> Husky </item>
         <item> Golden Retriver </item>
         <item> Pug </item>
-        <item> Yorkie </item>
-        <item> Pitbull </item>
         <item> Beagle </item>
-        <item> Yorkie </item>
-        <item> Boxer </item>
         <item> Other </item>
-    </string-array><string-array name="Maturity">
-        <item> Baby </item>
-        <item> Young </item>
-        <item> Adult </item>
-        <item> Senior </item>
     </string-array><string-array name="Gender">
         <item> Male </item>
         <item> Female </item>
@@ -3651,6 +3642,11 @@
         <item> M </item>
         <item> L </item>
         <item> XL </item>
+    </string-array><string-array name="Age">
+        <item> Baby </item>
+        <item> Young </item>
+        <item> Adult </item>
+        <item> Senior </item>
     </string-array></file><file name="my_menu" path="/Users/meghnapai/Desktop/Tinder/app/src/main/res/menu/my_menu.xml" qualifiers="" type="menu"/><file name="ic_launcher" path="/Users/meghnapai/Desktop/Tinder/app/src/main/res/mipmap-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/meghnapai/Desktop/Tinder/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/meghnapai/Desktop/Tinder/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/Users/meghnapai/Desktop/Tinder/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/></source><source path="/Users/meghnapai/Desktop/Tinder/app/build/generated/res/rs/debug"/><source path="/Users/meghnapai/Desktop/Tinder/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/meghnapai/Desktop/Tinder/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/meghnapai/Desktop/Tinder/app/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>

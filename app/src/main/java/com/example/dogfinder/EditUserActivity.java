@@ -96,20 +96,26 @@ public class EditUserActivity extends AppCompatActivity {
                 String item6 = edit_link.getText().toString();
                 String item3 = edit_loc.getText().toString();
 
-                //check link
-                if(!Patterns.WEB_URL.matcher(item6).matches()){
-                    //default dog pic
-                    item6 = "https://i.imgur.com/bMJ6N3r.png";
+                if(item1.matches("")|| item2.matches("")|| item3.matches("")||item4.matches("")||item5.matches("")){
+                    toastMessage("All Fields must be field");
                 }
 
+                else{
+                    //check link
+                    if(!Patterns.WEB_URL.matcher(item6).matches()){
+                        //default dog pic
+                        item6 = "https://i.imgur.com/bMJ6N3r.png";
+                    }
 
-                mDatabaseHelper.updateUser(item1, item2, item3, item4, item5, item6, selectedID);
 
-                Intent intent = new Intent(EditUserActivity.this, MainActivity.class);
+                    mDatabaseHelper.updateUser(item1, item2, item3, item4, item5, item6, selectedID);
+
+                    Intent intent = new Intent(EditUserActivity.this, MainActivity.class);
                     intent.putExtra("sessionID", selectedID);
                     startActivity(intent);
                     finish();
 
+                }
             }
         });
     }

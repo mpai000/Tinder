@@ -25,10 +25,10 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array Age
 array Breed
 array Gender
 array Location
-array Maturity
 array Size
 attr SwipeFlingStyle
 attr actionBarDivider
@@ -1168,7 +1168,6 @@ id image_description
 id image_name
 id imglink
 id info
-id infoButton
 id invisible
 id italic
 id item_touch_helper_previous_elevation

@@ -73,7 +73,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 mContext.startActivity(passIntent);
                 ((Activity) mContext).finish();
 
-                Toast.makeText(mContext, ""+ mDogIDs.get(position),Toast.LENGTH_LONG).show();
+//                Toast.makeText(mContext, ""+ mDogIDs.get(position),Toast.LENGTH_LONG).show();
 
                 Log.d(TAG, "onClick: clicked on" + mImageNames.get(position));
                 //Toast.makeText(mContext, mImageNames.get(position), Toast.LENGTH_SHORT).show();

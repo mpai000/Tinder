@@ -16,15 +16,11 @@
         <item> Husky </item>
         <item> Golden Retriver </item>
         <item> Pug </item>
-        <item> Yorkie </item>
-        <item> Pitbull </item>
         <item> Beagle </item>
-        <item> Yorkie </item>
-        <item> Boxer </item>
         <item> Other </item>
     </string-array>
 
-    <string-array name="Maturity">
+    <string-array name="Age">
         <item> Baby </item>
         <item> Young </item>
         <item> Adult </item>

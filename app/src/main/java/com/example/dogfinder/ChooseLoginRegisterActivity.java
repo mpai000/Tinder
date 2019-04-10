@@ -24,7 +24,7 @@ public class ChooseLoginRegisterActivity extends AppCompatActivity  {
         mPassword = (EditText) findViewById(R.id.password);
         mLogin = (Button) findViewById(R.id.login);
         mRegister = (Button) findViewById(R.id.register);
-        mMoreInfo = (Button) findViewById(R.id.infoButton);
+//        mMoreInfo = (Button) findViewById(R.id.infoButton);
 
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,12 +49,12 @@ public class ChooseLoginRegisterActivity extends AppCompatActivity  {
         });
 
 
-        mMoreInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+//        mMoreInfo.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
         mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

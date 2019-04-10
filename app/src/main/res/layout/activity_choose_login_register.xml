@@ -33,21 +33,21 @@
             android:orientation="horizontal"
             android:layout_gravity="center">
 
-            <Button
-                android:id="@+id/infoButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/buttonstyle"
-                android:text=" More Info "
-                android:textSize="15sp"
-                android:textColor="#fff" />
+            <!--<Button-->
+                <!--android:id="@+id/infoButton"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:background="@drawable/buttonstyle"-->
+                <!--android:text=" More Info "-->
+                <!--android:textSize="15sp"-->
+                <!--android:textColor="#fff" />-->
 
             <Button
                 android:id="@+id/register"
-                android:layout_width="wrap_content"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
                 android:textSize="15sp"
                 android:background="@drawable/buttonstyle"
                 android:text=" register  "
@@ -87,7 +87,7 @@
             android:layout_marginTop="40dp"
             android:textSize="15dp"
             android:background="@drawable/buttonstyle"
-            android:text="Find your Chew!"
+            android:text="Let's Begin!"
             android:textColor="#fff" />
     </LinearLayout>
 </LinearLayout>

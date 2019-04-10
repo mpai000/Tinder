@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                
+
 
                 Cursor checkPW = dogTinder.checkPW(mEmail.getText().toString(), mPassword.getText().toString());
                 if(checkPW.getCount() == 0){

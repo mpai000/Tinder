@@ -51,7 +51,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:background="@drawable/buttonstyle"
-            android:text="profile"
+            android:text=" Udpate profile"
             android:textSize="20dp"
             android:textColor="#fff" />
 
@@ -62,7 +62,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:background="@drawable/buttonstyle"
-            android:text="View History"
+            android:text="Favorites"
             android:textSize="20dp"
             android:textColor="#fff" />
 
@@ -88,7 +88,7 @@
 
         <Button
             android:id="@+id/recev_msg"
-            android:layout_width="150dp"
+            android:layout_width="180dp"
             android:layout_height="72dp"
             android:layout_gravity="left|bottom"
             android:layout_marginTop="-70dp"
@@ -99,7 +99,7 @@
 
         <Button
             android:id="@+id/sent_msg"
-            android:layout_width="150dp"
+            android:layout_width="180dp"
             android:layout_height="72dp"
             android:layout_gravity="right|bottom"
             android:layout_marginTop="-70dp"

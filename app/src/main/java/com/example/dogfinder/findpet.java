@@ -55,7 +55,7 @@ public class findpet extends AppCompatActivity {
         spinnerBreed.setAdapter(adapter1);
 
         Spinner spinnerMaturity = findViewById(R.id.spinnerMaturity);
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.Maturity,android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.Age,android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMaturity.setAdapter(adapter2);
 
