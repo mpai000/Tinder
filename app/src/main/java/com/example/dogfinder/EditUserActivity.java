@@ -42,16 +42,18 @@ public class EditUserActivity extends AppCompatActivity {
         mDatabaseHelper = MyApplication.getDbAdapter().getInstance(getApplicationContext());
 
         Intent receivedIntent = getIntent();
-        selectedID = receivedIntent.getIntExtra("id", -1);
+        selectedID = receivedIntent.getExtras().getInt("sessionID");
 
-        selectedemail = receivedIntent.getStringExtra("email");
-        selectedpass = receivedIntent.getStringExtra("password");
-        selectedloc = receivedIntent.getStringExtra("location");
-        selectedfName = receivedIntent.getStringExtra("name");
-        selectedlName = receivedIntent.getStringExtra("lname");
-        selectedlink = receivedIntent.getStringExtra("link");
+        Cursor userData = mDatabaseHelper.getUserInfo(selectedID);
 
-
+        if(userData.moveToNext()){
+            selectedemail = userData.getString(1);
+            selectedpass = userData.getString(2);
+            selectedloc = userData.getString(3);
+            selectedfName = userData.getString(4);
+            selectedlName = userData.getString(5);
+            selectedlink = userData.getString(6);
+        }
 
         edit_fn.setText(selectedfName);
         edit_ln.setText(selectedlName);

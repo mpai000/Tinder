@@ -101,12 +101,6 @@ public class MainActivity extends AppCompatActivity {
                     //Toast.makeText(MainActivity.this,"VALUE IS" + dataName,Toast.LENGTH_LONG).show();
                     Intent editUser = new Intent(MainActivity.this, EditUserActivity.class);
                     editUser.putExtra("sessionID", sessionID);
-                    editUser.putExtra("name", dataName);
-                    editUser.putExtra("lname", dataLname);
-                    editUser.putExtra("location", dataLocation);
-                    editUser.putExtra("email", dataEmail);
-                    editUser.putExtra("password", dataPassword);
-                    editUser.putExtra("link", datalink);
                     startActivity(editUser);
                 }
                 else{

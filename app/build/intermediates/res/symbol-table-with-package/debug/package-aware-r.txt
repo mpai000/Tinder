@@ -1109,6 +1109,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id check
 id checkbox
 id chronometer
 id clip_horizontal
@@ -1122,7 +1123,6 @@ id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
-id delete
 id description
 id design_bottom_sheet
 id design_menu_item_action_area
