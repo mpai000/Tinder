@@ -184,7 +184,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         if (data.moveToFirst()) {
             //Record exist
-//            db.update(UPLOAD_TABLE_NAME, contentValues, UPLOAD_COL1 + "= ? AND " + UPLOAD_COL2 + "= ?", search_cols);
             data.close();
             return true;
         }

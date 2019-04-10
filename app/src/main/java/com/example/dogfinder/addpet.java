@@ -112,25 +112,18 @@ public class addpet extends AppCompatActivity {
                 }
 
                 Cursor checkDog = dogTinder.searchDogID(dogLocation, dogBreed, dogMaturity, dogGender, dogSize, DogName);
-                {
-                    if (checkDog.getCount() == 0) {
-                        Toast.makeText(addpet.this, "Invalid Insertion of data", Toast.LENGTH_LONG).show();
-                    } else {
-                        Toast.makeText(addpet.this, "Successful data entry", Toast.LENGTH_LONG).show();
+                if (checkDog.moveToLast()) {
+                    Toast.makeText(addpet.this, "Successful data entry", Toast.LENGTH_LONG).show();
+                    int dogID = checkDog.getInt(0);
+                    dogTinder.upload(sessionID, dogID);
 
-                        checkDog.moveToNext();
-                        int dogID = checkDog.getInt(0);
-                        dogTinder.upload(sessionID, dogID);
-
-//                    Toast.makeText(ChooseLoginRegisterActivity.this,"VALUE" + String.valueOf(sessionID),Toast.LENGTH_LONG).show();
-
-                        Log.d("myTAG", String.valueOf(dogID));
-                        Intent intent = new Intent(addpet.this, MainActivity.class);
-                        intent.putExtra("sessionID", sessionID);
-                        startActivity(intent);
-                        finish();
-                        return;
-                    }
+                    Intent intent = new Intent(addpet.this, MainActivity.class);
+                    intent.putExtra("sessionID", sessionID);
+                    startActivity(intent);
+                    finish();
+                    return;
+                } else {
+                    Toast.makeText(addpet.this, "Invalid Insertion of data", Toast.LENGTH_LONG).show();
                 }
             }
         });
