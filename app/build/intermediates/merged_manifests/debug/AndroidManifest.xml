@@ -23,6 +23,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.dogfinder.EditUserActivity" />
         <activity android:name="com.example.dogfinder.LoginActivity" />
         <activity android:name="com.example.dogfinder.RegisterationActivity" />
         <activity android:name="com.example.dogfinder.MainActivity" />

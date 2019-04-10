@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.ToolbarWidgetWrapper;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -16,7 +17,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     int sessionID;
-    Button findpet, addpet, history;
+    Button findpet, addpet, history, mprofile;
     DatabaseHelper dogTinder;
     Toolbar mtoolbar;
     TextView toolbarTitle;
@@ -71,6 +72,33 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
                 return;
+            }
+        });
+
+        //NEED HELP HEREEE
+        // I'm trying to pass this to EditUSerActivity so the user can edit their stuff from there
+
+        mprofile = (Button) findViewById(R.id.profile);
+        mprofile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Cursor data = dogTinder.getUserInfo(sessionID);
+                int dataName = -1;
+                while(data.moveToNext()) {
+                    dataName = data.getInt(3);
+                }
+                if(dataName>-1){
+                    Toast.makeText(MainActivity.this,"VALUE IS" + String.valueOf(sessionID),Toast.LENGTH_LONG).show();
+//                    Intent editUser = new Intent(MainActivity.this, EditUserActivity.class);
+//                    editUser.putExtra("sessionID", sessionID);
+//                    editUser.putExtra("name", dataName);
+//                    startActivity(editUser);
+                }
+                else{
+                    Toast.makeText(MainActivity.this,"no id",Toast.LENGTH_LONG).show();
+                }
+
+
             }
         });
     }

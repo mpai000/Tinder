@@ -1122,6 +1122,7 @@ id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
+id delete
 id description
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -1202,6 +1203,7 @@ id parent_matrix
 id password
 id percent
 id pin
+id profile
 id progress_circular
 id progress_horizontal
 id radio
@@ -1210,6 +1212,7 @@ id register
 id right
 id right_icon
 id right_side
+id save
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1348,6 +1351,7 @@ layout abc_tooltip
 layout activity_addpet
 layout activity_app
 layout activity_choose_login_register
+layout activity_edit_user
 layout activity_findpet
 layout activity_history
 layout activity_login

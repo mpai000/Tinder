@@ -60,8 +60,6 @@ public class SwipeScreen extends AppCompatActivity {
         setSupportActionBar(mtoolbar);
         getSupportActionBar().setTitle(null);
         mtoolbar.setNavigationIcon(R.drawable.ic_keyboard_backspace_black_24dp);
-
-
         toolbarTitle=(TextView) findViewById(R.id.title);
         toolbarTitle.setText("");
         mtoolbar.setNavigationOnClickListener(new View.OnClickListener() {

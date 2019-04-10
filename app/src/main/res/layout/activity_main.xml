@@ -45,6 +45,17 @@
             android:textColor="#fff" />
 
         <Button
+            android:id="@+id/profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonstyle"
+            android:text="profile"
+            android:textSize="20dp"
+            android:textColor="#fff" />
+
+        <Button
             android:id="@+id/history"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

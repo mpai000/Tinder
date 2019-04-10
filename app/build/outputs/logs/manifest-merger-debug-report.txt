@@ -91,17 +91,21 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/meghnapai/.gradl
 	android:supportsRtl
 		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:13:9-54
+		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:11:9-43
+		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
 		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:16:9-40
 	android:name
-		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:14:9-38
+		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:10:9-38
+activity#com.example.dogfinder.EditUserActivity
+ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:17:9-63
+	android:name
+		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:17:19-51
 activity#com.example.dogfinder.LoginActivity
 ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:18:9-51
 	android:name
@@ -111,15 +115,15 @@ ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:19:9
 	android:name
 		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:19:19-56
 activity#com.example.dogfinder.MainActivity
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:20:9-49
+ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:20:9-50
 	android:name
 		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:20:19-47
 activity#com.example.dogfinder.SwipeScreen
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:21:9-48
+ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:21:9-49
 	android:name
 		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:21:19-46
 activity#com.example.dogfinder.History
-ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:22:9-44
+ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:22:9-45
 	android:name
 		ADDED from /Users/meghnapai/Desktop/Tinder/app/src/main/AndroidManifest.xml:22:19-42
 activity#com.example.dogfinder.addpet

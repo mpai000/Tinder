@@ -37,8 +37,7 @@ public class ChooseLoginRegisterActivity extends AppCompatActivity  {
 
                     checkPW.moveToNext();
                     int sessionID = checkPW.getInt(0);
-                    Toast.makeText(ChooseLoginRegisterActivity.this,"VALUE" + String.valueOf(sessionID),Toast.LENGTH_LONG).show();
-
+//                    Toast.makeText(ChooseLoginRegisterActivity.this,"VALUE" + String.valueOf(sessionID),Toast.LENGTH_LONG).show();
 
                     Intent intent = new Intent(ChooseLoginRegisterActivity.this, MainActivity.class);
                     intent.putExtra("sessionID", sessionID);
