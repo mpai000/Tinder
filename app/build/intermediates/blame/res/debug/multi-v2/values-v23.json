@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Sena\\Documents\\GitHub\\Tinder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/Users/meghnapai/Desktop/Tinder/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sena\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-28.0.0.aar\\8fc43479b72f7d3d0e30575ddf8f605d\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/meghnapai/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/38230df2c3b0cb18223c2054b9eb6643/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sena\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\492a82d09ffc23930b93bd9d7e7bb9f2\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/meghnapai/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bb102245aa1d29477eafc4862e6b9797/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

@@ -11,7 +11,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static DatabaseHelper sInstance = null;
 
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 
     public static final String DATABASE_NAME = "dogtinderDB.db";
     public static final String TABLE_NAME = "dog_table";
@@ -39,6 +39,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String SWIPE_COL1 = "userID";
     public static final String SWIPE_COL2 = "dogID";
     public static final String SWIPE_COL3 = "direction";
+
+    public static final String UPLOAD_TABLE_NAME = "upload_table"; //connect user with the dog they added
+    public static final String UPLOAD_COL1 = "userID";
+    public static final String UPLOAD_COL2 = "dogID";
 
 
     public static synchronized DatabaseHelper getInstance(Context context) {
@@ -69,6 +73,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         String CREATE_SWIPE_TABLE = "CREATE TABLE swipe_table(userID INTEGER,dogID INTEGER, direction TEXT, FOREIGN KEY(userID) REFERENCES user_table(userID), FOREIGN KEY(dogID) REFERENCES dog_table(dogID), PRIMARY KEY(userID, dogID))";
         db.execSQL(CREATE_SWIPE_TABLE);
+
+        String CREATE_UPLOAD_TABLE = "CREATE TABLE upload_table(userID INTEGER,dogID INTEGER, FOREIGN KEY(userID) REFERENCES user_table(userID), FOREIGN KEY(dogID) REFERENCES dog_table(dogID), PRIMARY KEY(userID, dogID))";
+        db.execSQL(CREATE_UPLOAD_TABLE);
     }
 
     @Override
@@ -76,6 +83,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS dog_table");
         db.execSQL("DROP TABLE IF EXISTS user_table");
         db.execSQL("DROP TABLE IF EXISTS swipe_table");
+        db.execSQL("DROP TABLE IF EXISTS upload_table");
         onCreate(db);
     }
 
@@ -166,6 +174,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
+    public boolean upload(int userID, int dogID){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String[] search_cols = new String[]{String.valueOf(userID), String.valueOf(dogID)};
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(UPLOAD_COL1,userID);
+        contentValues.put(UPLOAD_COL2,dogID);
+        long result = db.insertOrThrow(UPLOAD_TABLE_NAME, null, contentValues);
+        db.close();
+        if (result == -1){
+            return false;
+        } else
+        {
+            return true;
+        }
+
+    }
+
     public Cursor searchDogData(String dogLocation, String dogBreed, String dogMaturity, String dogGender, String dogSize){
         SQLiteDatabase db = this.getWritableDatabase();
         String[] search_cols = new String[]{dogLocation, dogBreed, dogMaturity, dogGender, dogSize};
@@ -176,6 +202,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return data;
     }
 
+    public Cursor searchDogID(String dogLocation, String dogBreed, String dogMaturity, String dogGender, String dogSize, String dogname){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String[] search_cols = new String[]{dogLocation, dogBreed, dogMaturity, dogGender, dogSize, dogname};
+
+        Cursor data;
+        data = db.rawQuery("SELECT * FROM dog_table WHERE " + COL2 + "= ? AND " + COL3 + "= ? AND " + COL4 + "= ? AND " + COL5 + "= ? AND " + COL6 + "= ? AND " + COL7 + "= ?", search_cols);
+
+        return data;
+    }
 
     public Cursor getDogInfo(int dogID){
         SQLiteDatabase db = this.getWritableDatabase();
@@ -207,6 +242,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         return data;
     }
+
 
     public Cursor checkExist(String email){
         SQLiteDatabase db = this.getWritableDatabase();

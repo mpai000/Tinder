@@ -87,16 +87,16 @@
             android:text="Update"
             android:textSize="20dp"
             android:textColor="#fff" />
-        <Button
-            android:id="@+id/check"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/buttonstyle"
-            android:text="check"
-            android:textSize="20dp"
-            android:textColor="#fff" />
+        <!--<Button-->
+            <!--android:id="@+id/check"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:background="@drawable/buttonstyle"-->
+            <!--android:text="check"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="#fff" />-->
 
 
 
