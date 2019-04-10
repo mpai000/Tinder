@@ -4,10 +4,12 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class EditUserActivity extends AppCompatActivity {
@@ -16,6 +18,8 @@ public class EditUserActivity extends AppCompatActivity {
     private Button mSave;
     private EditText edit_email, edit_pass, edit_fn, edit_ln, edit_link, edit_loc;
 
+    Toolbar mtoolbar;
+    TextView toolbarTitle;
     DatabaseHelper mDatabaseHelper;
 
     private String selectedfName;
@@ -39,10 +43,30 @@ public class EditUserActivity extends AppCompatActivity {
         edit_link= (EditText) findViewById(R.id.link);
         edit_loc= (EditText) findViewById(R.id.location);
 
+
+
         mDatabaseHelper = MyApplication.getDbAdapter().getInstance(getApplicationContext());
 
         Intent receivedIntent = getIntent();
         selectedID = receivedIntent.getExtras().getInt("sessionID");
+
+        mtoolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mtoolbar);
+        getSupportActionBar().setTitle(null);
+        mtoolbar.setNavigationIcon(R.drawable.ic_keyboard_backspace_black_24dp);
+        toolbarTitle=(TextView) findViewById(R.id.title);
+        toolbarTitle.setText("Update Profile Information");
+        mtoolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EditUserActivity.this, MainActivity.class);
+                intent.putExtra("sessionID", selectedID);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
 
         Cursor userData = mDatabaseHelper.getUserInfo(selectedID);
 

@@ -1,11 +1,16 @@
 #Internal package file, do not edit.
+<<<<<<< HEAD
 #Wed Apr 10 14:30:02 EDT 2019
+=======
+#Wed Apr 10 13:34:18 EDT 2019
+>>>>>>> c387437ce8f92021023de42722dbe02e6efc21fc
 4.path=classes.dex
 8.set=DEX
 6.path=classes.dex
 0.baseType=DIRECTORY
 10.path=classes.dex
 5.baseType=DIRECTORY
+<<<<<<< HEAD
 1.base=/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/transforms/dexMerger/debug/14
 8.path=classes.dex
 3.base=/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/transforms/dexMerger/debug/12
@@ -13,6 +18,15 @@
 5.base=/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/transforms/dexMerger/debug/18
 7.base=/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/transforms/dexMerger/debug/16
 9.base=/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/transforms/dexMerger/debug/17
+=======
+1.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/16
+8.path=classes.dex
+3.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/18
+4.set=DEX
+5.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/15
+7.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/17
+9.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/21
+>>>>>>> c387437ce8f92021023de42722dbe02e6efc21fc
 1.baseType=DIRECTORY
 0.set=DEX
 6.baseType=DIRECTORY
@@ -25,6 +39,7 @@
 3.path=classes.dex
 10.set=DEX
 5.path=classes.dex
+<<<<<<< HEAD
 0.base=/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/transforms/dexMerger/debug/11
 7.path=classes.dex
 9.path=classes.dex
@@ -35,6 +50,18 @@
 6.base=/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/transforms/dexMerger/debug/13
 10.base=/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/transforms/dexMerger/debug/21
 8.base=/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/transforms/dexMerger/debug/19
+=======
+0.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/20
+7.path=classes.dex
+9.path=classes.dex
+6.set=DEX
+2.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/19
+4.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/12
+3.baseType=DIRECTORY
+6.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/14
+10.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/13
+8.base=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/11
+>>>>>>> c387437ce8f92021023de42722dbe02e6efc21fc
 2.set=DEX
 8.baseType=DIRECTORY
 9.set=DEX

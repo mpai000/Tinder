@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
+<<<<<<< HEAD
     abi="x86"
     api-level="28"
     build-mode="COLD"
@@ -8,16 +9,32 @@
     plugin-version="3.3.2"
     timestamp="1554921367382"
     token="8901088360498740969"
+=======
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="28"
+    build-mode="COLD"
+    density="420dpi"
+    format="10"
+    ir-eligibility="COMPATIBLE"
+    plugin-version="3.3.2"
+    timestamp="1554921258038"
+    token="-570917137430190658"
+>>>>>>> c387437ce8f92021023de42722dbe02e6efc21fc
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
+<<<<<<< HEAD
         duration="0" />
+=======
+        duration="1346" />
+>>>>>>> c387437ce8f92021023de42722dbe02e6efc21fc
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
+<<<<<<< HEAD
         duration="0" />
     <task
         name="verifier"
@@ -65,11 +82,74 @@
             type="SPLIT" />
         <artifact
             location="/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+=======
+        duration="22" />
+    <task
+        name="verifier"
+        duration="19" />
+
+    <artifact
+        location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+
+    <build
+        build-mode="FULL"
+        timestamp="1554920554910"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+>>>>>>> c387437ce8f92021023de42722dbe02e6efc21fc
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
+<<<<<<< HEAD
         timestamp="1554921367382"
         verifier="COLD_SWAP_REQUESTED" />
+=======
+        ir-eligibility="COMPATIBLE"
+        timestamp="1554921258038"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/meghnapai/Desktop/Tinder/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+    </build>
+>>>>>>> c387437ce8f92021023de42722dbe02e6efc21fc
 
 </instant-run>

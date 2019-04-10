@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Wed Apr 10 14:30:02 EDT 2019
 base.0=/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/transforms/dexMerger/debug/1
+=======
+#Wed Apr 10 13:34:17 EDT 2019
+base.0=/Users/meghnapai/Desktop/Tinder/app/build/intermediates/transforms/dexMerger/debug/1
+>>>>>>> c387437ce8f92021023de42722dbe02e6efc21fc
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
                     "source": "/Users/carlosvides/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/52569c765afa219f730e96174977e589/res/values-v17/values-v17.xml",
+=======
+            "outputFile": "/Users/meghnapai/Desktop/Tinder/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
+            "map": [
+                {
+                    "source": "/Users/meghnapai/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bb102245aa1d29477eafc4862e6b9797/res/values-v17/values-v17.xml",
+>>>>>>> c387437ce8f92021023de42722dbe02e6efc21fc
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

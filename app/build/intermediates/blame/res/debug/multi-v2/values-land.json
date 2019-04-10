@@ -1,10 +1,27 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/carlosvides/Documents/GitHub/Tinder/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
                     "source": "/Users/carlosvides/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/323702e4890a3f739c18efa4aadaacb5/res/values-land/values-land.xml",
+=======
+            "outputFile": "/Users/meghnapai/Desktop/Tinder/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/meghnapai/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bb102245aa1d29477eafc4862e6b9797/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "/Users/meghnapai/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a9bbbd33569c34c3e579907646b7ac55/res/values-land/values-land.xml",
+>>>>>>> c387437ce8f92021023de42722dbe02e6efc21fc
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,6 +38,7 @@
                         "endColumns": "10",
                         "endOffsets": "431"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "/Users/carlosvides/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/52569c765afa219f730e96174977e589/res/values-land/values-land.xml",
@@ -31,6 +49,8 @@
                         "endColumns": "69,70,67",
                         "endOffsets": "120,191,259"
                     }
+=======
+>>>>>>> c387437ce8f92021023de42722dbe02e6efc21fc
                 }
             ]
         }
