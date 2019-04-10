@@ -37,7 +37,7 @@ public class SendMessageActivity extends AppCompatActivity {
 
         Cursor repName = dogTinder.getUserInfo(recipientID);
         if(repName.moveToNext()){
-            recipientName.setText(repName.getString(4) + " " + repName.getString(5));
+            recipientName.setText("TO: "+repName.getString(4) + " " + repName.getString(5));
         }
 
 

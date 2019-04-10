@@ -223,8 +223,7 @@ public class SwipeScreen extends AppCompatActivity {
             } else {
                 viewHolder = (ViewHolder) convertView.getTag();
             }
-            viewHolder.DataText.setText("ID: " + list.get(position).getDogID() + "\n" +
-                                        "Name: " + list.get(position).getDogName() + "\n" +
+            viewHolder.DataText.setText("Name: " + list.get(position).getDogName() + "\n" +
                                         "Location: " + list.get(position).getDogLocation() + "\n" +
                                         "Breed: " + list.get(position).getDogBreed() + "\n" +
                                         "Maturity: " + list.get(position).getDogMaturity() + "\n" +

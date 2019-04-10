@@ -78,11 +78,12 @@ public class GalleryActivity extends AppCompatActivity {
 
         Cursor dogData = dogTinder.getDogInfo(dogID);
         if (dogData.moveToNext()){
-            descText = "A " + dogData.getString(5) + "-sized " +
-                    dogData.getString(3) + " " +
-                    dogData.getString(4) + " " +
-                    dogData.getString(2) + ". \n" +
-                    dogData.getString(6) + " is located in " + dogData.getString(1);
+            descText = ("Location: " + dogData.getString(1)+ "\n" +
+                    "Breed: " + dogData.getString(2) + "\n" +
+                    "Maturity: " + dogData.getString(3) + "\n" +
+                    "Gender: " + dogData.getString(4) + "\n" +
+                    "Size: " + dogData.getString(5) + "\n");
+
 
             name.setText(dogData.getString(6));
             desc.setText(descText);
