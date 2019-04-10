@@ -60,7 +60,6 @@
             android:drawablePadding="10dp"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
             />
         <Spinner
             android:id="@+id/spinnerGender"
@@ -82,7 +81,6 @@
             android:drawablePadding="10dp"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
             />
         <Spinner
             android:id="@+id/spinnerBreed"
@@ -104,7 +102,6 @@
             android:drawablePadding="10dp"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
             />
 
         <Spinner
@@ -123,12 +120,11 @@
             android:paddingLeft="5dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Maturity"
+            android:text="Age"
             android:drawableLeft="@drawable/ic_android_black_24dp"
             android:drawablePadding="10dp"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
             />
 
         <Spinner
@@ -150,7 +146,6 @@
             android:text="Location"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
             />
 
         <Spinner
