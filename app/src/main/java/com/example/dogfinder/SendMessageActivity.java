@@ -24,6 +24,7 @@ public class SendMessageActivity extends AppCompatActivity {
 
     int recipientID;
     int userID;
+    String nameString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,14 +53,14 @@ public class SendMessageActivity extends AppCompatActivity {
         });
 
 
-
         sendMsgBtn = (Button) findViewById(R.id.send);
         messageString = (EditText) findViewById(R.id.message);
         recipientName = (TextView) findViewById(R.id.rep_name);
 
         Cursor repName = dogTinder.getUserInfo(recipientID);
         if(repName.moveToNext()){
-            recipientName.setText("TO: "+repName.getString(4) + " " + repName.getString(5));
+            nameString = repName.getString(4) + " " + repName.getString(5);
+            recipientName.setText("TO: "+ nameString);
         }
 
 
@@ -68,7 +69,7 @@ public class SendMessageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 boolean sendmsg = dogTinder.sendMessage(userID, recipientID, messageString.getText().toString());
                 if(sendmsg){
-                    Toast.makeText(SendMessageActivity.this,userID + " " +  recipientID+" "+messageString.getText().toString(),Toast.LENGTH_LONG).show();
+                    Toast.makeText(SendMessageActivity.this,"Message sent to " + nameString,Toast.LENGTH_LONG).show();
 
                     Intent intent = new Intent(SendMessageActivity.this, MainActivity.class);
                     intent.putExtra("sessionID", userID);

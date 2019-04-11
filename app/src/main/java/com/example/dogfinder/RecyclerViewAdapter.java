@@ -24,9 +24,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private static final String TAG = "RecyclerViewAdapter";
 
 
-    private ArrayList<String> mImageNames = new ArrayList<>();
-    private ArrayList<String> mImages = new ArrayList<>();
-    private ArrayList<String> mDogIDs = new ArrayList<>();
+    private ArrayList<String> mImageNames;
+    private ArrayList<String> mImages;
+    private ArrayList<String> mDogIDs;
 
     private Context mContext;
 
@@ -42,7 +42,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_listitem, parent,false);
         ViewHolder holder = new ViewHolder(view);
         return holder;

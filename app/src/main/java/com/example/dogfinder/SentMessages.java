@@ -25,9 +25,7 @@ public class SentMessages extends AppCompatActivity {
     //vars
     private ArrayList<String> recipients = new ArrayList<>();
     private ArrayList<String> messages = new ArrayList<>();
-
-
-    int dogID, userID;
+    private ArrayList<Integer> recipientIDs = new ArrayList<>();
 
     DatabaseHelper dogTinder;
 
@@ -59,9 +57,12 @@ public class SentMessages extends AppCompatActivity {
 
         Cursor messageData = dogTinder.getSentMessages(sessionID);
         while(messageData.moveToNext()){
-            messages.add(messageData.getString(3));
+            int recipientID = messageData.getInt(2);
 
-            Cursor recipientName = dogTinder.getUserInfo(Integer.parseInt(messageData.getString(2)));
+            messages.add(messageData.getString(3));
+            recipientIDs.add(recipientID);
+
+            Cursor recipientName = dogTinder.getUserInfo(recipientID);
             if(recipientName.moveToNext()){
                 recipients.add(recipientName.getString(4)+" "+recipientName.getString(5));
             }
@@ -81,7 +82,7 @@ public class SentMessages extends AppCompatActivity {
         intent.putExtra("sessionID", sessionID);
 
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
-        SentMessageAdapter adapter = new SentMessageAdapter(this,recipients, messages);
+        SentMessageAdapter adapter = new SentMessageAdapter(this,recipients, messages, recipientIDs);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

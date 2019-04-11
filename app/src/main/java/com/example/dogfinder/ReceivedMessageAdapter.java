@@ -24,15 +24,17 @@ public class ReceivedMessageAdapter extends RecyclerView.Adapter<ReceivedMessage
 
     private ArrayList<String> senderNames;
     private ArrayList<String> messages;
+    private ArrayList<Integer> senderIDs;
 
     private Context mContext;
 
     int sessionID;
 
-    public ReceivedMessageAdapter(Context mContext, ArrayList<String> senderNames, ArrayList<String> messages) {
+    public ReceivedMessageAdapter(Context mContext, ArrayList<String> senderNames, ArrayList<String> messages,  ArrayList<Integer> senderIDs) {
         this.mContext = mContext;
         this.senderNames = senderNames;
         this.messages = messages;
+        this.senderIDs = senderIDs;
     }
 
     @NonNull
@@ -62,11 +64,20 @@ public class ReceivedMessageAdapter extends RecyclerView.Adapter<ReceivedMessage
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(mContext, senderNames.get(position), Toast.LENGTH_SHORT).show();
+                Intent intent = ((Activity) mContext).getIntent();
+                sessionID = intent.getExtras().getInt("sessionID");
+
+                Intent passIntent = new Intent(mContext, SendMessageActivity.class);
+                passIntent.putExtra("sessionID", sessionID);
+                passIntent.putExtra("recipientID", senderIDs.get(position));
+
+                mContext.startActivity(passIntent);
+                ((Activity) mContext).finish();
+
+
+                Toast.makeText(mContext, "Send message to " + senderNames.get(position), Toast.LENGTH_SHORT).show();
 
                 return;
-
-
             }
         });
 
