@@ -34,7 +34,7 @@ public class SentMessages extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_receivedmessages);
+        setContentView(R.layout.activity_sentmessages);
 
         sessionID = getIntent().getExtras().getInt("sessionID");
 
@@ -81,7 +81,7 @@ public class SentMessages extends AppCompatActivity {
         intent.putExtra("sessionID", sessionID);
 
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
-        ReceivedMessageAdapter adapter = new ReceivedMessageAdapter(this,recipients, messages);
+        SentMessageAdapter adapter = new SentMessageAdapter(this,recipients, messages);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

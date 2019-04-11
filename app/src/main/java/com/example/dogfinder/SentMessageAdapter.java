@@ -57,7 +57,7 @@ public class SentMessageAdapter extends RecyclerView.Adapter<SentMessageAdapter.
                 .load("https://i.imgur.com/GBpeyEN.png")
                 .into(holder.image);
 
-        holder.imageName.setText("FROM: " + recipients.get(position) + "\n"+ messages.get(position));
+        holder.imageName.setText("TO: " + recipients.get(position) + "\n"+ messages.get(position));
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override

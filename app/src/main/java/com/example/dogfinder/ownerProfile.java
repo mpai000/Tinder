@@ -91,10 +91,10 @@ public class ownerProfile extends AppCompatActivity {
         Cursor ownerData = dogTinder.getUserInfo(userID);
         if (ownerData.moveToNext()) {
             descText = "Location: " + ownerData.getString(3) + "\n" +
-                        "Owner of " + dogName + ".";
+                        "Owner of " + dogName + "\n";
 
 
-            String ownerName = ownerData.getString(4) + ownerData.getString(5);
+            String ownerName = ownerData.getString(4) + " " + ownerData.getString(5);
             name.setText(ownerName);
             desc.setText(descText);
 
