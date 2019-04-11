@@ -61,7 +61,7 @@ public class SentMessages extends AppCompatActivity {
         while(messageData.moveToNext()){
             messages.add(messageData.getString(3));
 
-            Cursor recipientName = dogTinder.getUserInfo(Integer.parseInt(messageData.getString(1)));
+            Cursor recipientName = dogTinder.getUserInfo(Integer.parseInt(messageData.getString(2)));
             if(recipientName.moveToNext()){
                 recipients.add(recipientName.getString(4)+" "+recipientName.getString(5));
             }
