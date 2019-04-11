@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(null);
         mtoolbar.setNavigationIcon(R.drawable.ic_keyboard_backspace_black_24dp);
         toolbarTitle=(TextView) findViewById(R.id.title);
-        toolbarTitle.setText("");
+        toolbarTitle.setText("Menu");
         mtoolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
